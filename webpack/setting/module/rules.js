@@ -69,7 +69,7 @@ module.exports.rules = [
         ],
     },
     {
-        test: /\.(txt|md)$/i,
+        test: /\.(txt|md|html)$/i,
         use: 'raw-loader',
     },
 ];

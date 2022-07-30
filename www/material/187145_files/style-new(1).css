@@ -48397,3 +48397,6 @@ textarea {
 }
 
 /*# sourceMappingURL=style-new.css.map */
+.chat-container .smile-name {
+    display: inline-block;
+}

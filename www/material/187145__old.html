@@ -1,0 +1,2239 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)https://goodgame.ru/chat/187145 -->
+<html class="ng-scope">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style type="text/css" data-tippy-stylesheet="">.tippy-iOS {
+        cursor: pointer !important;
+        -webkit-tap-highlight-color: transparent
+    }
+
+    .tippy-popper {
+        transition-timing-function: cubic-bezier(.165, .84, .44, 1);
+        max-width: calc(100% - 8px);
+        pointer-events: none;
+        outline: 0
+    }
+
+    .tippy-popper[x-placement^=top] .tippy-backdrop {
+        border-radius: 40% 40% 0 0
+    }
+
+    .tippy-popper[x-placement^=top] .tippy-roundarrow {
+        bottom: -7px;
+        bottom: -6.5px;
+        -webkit-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        margin: 0 3px
+    }
+
+    .tippy-popper[x-placement^=top] .tippy-roundarrow svg {
+        position: absolute;
+        left: 0;
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg)
+    }
+
+    .tippy-popper[x-placement^=top] .tippy-arrow {
+        border-top: 8px solid #333;
+        border-right: 8px solid transparent;
+        border-left: 8px solid transparent;
+        bottom: -7px;
+        margin: 0 3px;
+        -webkit-transform-origin: 50% 0;
+        transform-origin: 50% 0
+    }
+
+    .tippy-popper[x-placement^=top] .tippy-backdrop {
+        -webkit-transform-origin: 0 25%;
+        transform-origin: 0 25%
+    }
+
+    .tippy-popper[x-placement^=top] .tippy-backdrop[data-state=visible] {
+        -webkit-transform: scale(1) translate(-50%, -55%);
+        transform: scale(1) translate(-50%, -55%)
+    }
+
+    .tippy-popper[x-placement^=top] .tippy-backdrop[data-state=hidden] {
+        -webkit-transform: scale(.2) translate(-50%, -45%);
+        transform: scale(.2) translate(-50%, -45%);
+        opacity: 0
+    }
+
+    .tippy-popper[x-placement^=top] [data-animation=shift-toward][data-state=visible] {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px)
+    }
+
+    .tippy-popper[x-placement^=top] [data-animation=shift-toward][data-state=hidden] {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px)
+    }
+
+    .tippy-popper[x-placement^=top] [data-animation=perspective] {
+        -webkit-transform-origin: bottom;
+        transform-origin: bottom
+    }
+
+    .tippy-popper[x-placement^=top] [data-animation=perspective][data-state=visible] {
+        -webkit-transform: perspective(700px) translateY(-10px);
+        transform: perspective(700px) translateY(-10px)
+    }
+
+    .tippy-popper[x-placement^=top] [data-animation=perspective][data-state=hidden] {
+        opacity: 0;
+        -webkit-transform: perspective(700px) rotateX(60deg);
+        transform: perspective(700px) rotateX(60deg)
+    }
+
+    .tippy-popper[x-placement^=top] [data-animation=fade][data-state=visible] {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px)
+    }
+
+    .tippy-popper[x-placement^=top] [data-animation=fade][data-state=hidden] {
+        opacity: 0;
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px)
+    }
+
+    .tippy-popper[x-placement^=top] [data-animation=shift-away][data-state=visible] {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px)
+    }
+
+    .tippy-popper[x-placement^=top] [data-animation=shift-away][data-state=hidden] {
+        opacity: 0
+    }
+
+    .tippy-popper[x-placement^=top] [data-animation=scale] {
+        -webkit-transform-origin: bottom;
+        transform-origin: bottom
+    }
+
+    .tippy-popper[x-placement^=top] [data-animation=scale][data-state=visible] {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px)
+    }
+
+    .tippy-popper[x-placement^=top] [data-animation=scale][data-state=hidden] {
+        opacity: 0;
+        -webkit-transform: translateY(-10px) scale(.5);
+        transform: translateY(-10px) scale(.5)
+    }
+
+    .tippy-popper[x-placement^=bottom] .tippy-backdrop {
+        border-radius: 0 0 30% 30%
+    }
+
+    .tippy-popper[x-placement^=bottom] .tippy-roundarrow {
+        top: -7px;
+        -webkit-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+        margin: 0 3px
+    }
+
+    .tippy-popper[x-placement^=bottom] .tippy-roundarrow svg {
+        position: absolute;
+        left: 0
+    }
+
+    .tippy-popper[x-placement^=bottom] .tippy-arrow {
+        border-bottom: 8px solid #333;
+        border-right: 8px solid transparent;
+        border-left: 8px solid transparent;
+        top: -7px;
+        margin: 0 3px;
+        -webkit-transform-origin: 50% 100%;
+        transform-origin: 50% 100%
+    }
+
+    .tippy-popper[x-placement^=bottom] .tippy-backdrop {
+        -webkit-transform-origin: 0 -50%;
+        transform-origin: 0 -50%
+    }
+
+    .tippy-popper[x-placement^=bottom] .tippy-backdrop[data-state=visible] {
+        -webkit-transform: scale(1) translate(-50%, -45%);
+        transform: scale(1) translate(-50%, -45%)
+    }
+
+    .tippy-popper[x-placement^=bottom] .tippy-backdrop[data-state=hidden] {
+        -webkit-transform: scale(.2) translate(-50%);
+        transform: scale(.2) translate(-50%);
+        opacity: 0
+    }
+
+    .tippy-popper[x-placement^=bottom] [data-animation=shift-toward][data-state=visible] {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px)
+    }
+
+    .tippy-popper[x-placement^=bottom] [data-animation=shift-toward][data-state=hidden] {
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px)
+    }
+
+    .tippy-popper[x-placement^=bottom] [data-animation=perspective] {
+        -webkit-transform-origin: top;
+        transform-origin: top
+    }
+
+    .tippy-popper[x-placement^=bottom] [data-animation=perspective][data-state=visible] {
+        -webkit-transform: perspective(700px) translateY(10px);
+        transform: perspective(700px) translateY(10px)
+    }
+
+    .tippy-popper[x-placement^=bottom] [data-animation=perspective][data-state=hidden] {
+        opacity: 0;
+        -webkit-transform: perspective(700px) rotateX(-60deg);
+        transform: perspective(700px) rotateX(-60deg)
+    }
+
+    .tippy-popper[x-placement^=bottom] [data-animation=fade][data-state=visible] {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px)
+    }
+
+    .tippy-popper[x-placement^=bottom] [data-animation=fade][data-state=hidden] {
+        opacity: 0;
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px)
+    }
+
+    .tippy-popper[x-placement^=bottom] [data-animation=shift-away][data-state=visible] {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px)
+    }
+
+    .tippy-popper[x-placement^=bottom] [data-animation=shift-away][data-state=hidden] {
+        opacity: 0
+    }
+
+    .tippy-popper[x-placement^=bottom] [data-animation=scale] {
+        -webkit-transform-origin: top;
+        transform-origin: top
+    }
+
+    .tippy-popper[x-placement^=bottom] [data-animation=scale][data-state=visible] {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px)
+    }
+
+    .tippy-popper[x-placement^=bottom] [data-animation=scale][data-state=hidden] {
+        opacity: 0;
+        -webkit-transform: translateY(10px) scale(.5);
+        transform: translateY(10px) scale(.5)
+    }
+
+    .tippy-popper[x-placement^=left] .tippy-backdrop {
+        border-radius: 50% 0 0 50%
+    }
+
+    .tippy-popper[x-placement^=left] .tippy-roundarrow {
+        right: -12px;
+        -webkit-transform-origin: 33.33333333% 50%;
+        transform-origin: 33.33333333% 50%;
+        margin: 3px 0
+    }
+
+    .tippy-popper[x-placement^=left] .tippy-roundarrow svg {
+        position: absolute;
+        left: 0;
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg)
+    }
+
+    .tippy-popper[x-placement^=left] .tippy-arrow {
+        border-left: 8px solid #333;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        right: -7px;
+        margin: 3px 0;
+        -webkit-transform-origin: 0 50%;
+        transform-origin: 0 50%
+    }
+
+    .tippy-popper[x-placement^=left] .tippy-backdrop {
+        -webkit-transform-origin: 50% 0;
+        transform-origin: 50% 0
+    }
+
+    .tippy-popper[x-placement^=left] .tippy-backdrop[data-state=visible] {
+        -webkit-transform: scale(1) translate(-50%, -50%);
+        transform: scale(1) translate(-50%, -50%)
+    }
+
+    .tippy-popper[x-placement^=left] .tippy-backdrop[data-state=hidden] {
+        -webkit-transform: scale(.2) translate(-75%, -50%);
+        transform: scale(.2) translate(-75%, -50%);
+        opacity: 0
+    }
+
+    .tippy-popper[x-placement^=left] [data-animation=shift-toward][data-state=visible] {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px)
+    }
+
+    .tippy-popper[x-placement^=left] [data-animation=shift-toward][data-state=hidden] {
+        opacity: 0;
+        -webkit-transform: translateX(-20px);
+        transform: translateX(-20px)
+    }
+
+    .tippy-popper[x-placement^=left] [data-animation=perspective] {
+        -webkit-transform-origin: right;
+        transform-origin: right
+    }
+
+    .tippy-popper[x-placement^=left] [data-animation=perspective][data-state=visible] {
+        -webkit-transform: perspective(700px) translateX(-10px);
+        transform: perspective(700px) translateX(-10px)
+    }
+
+    .tippy-popper[x-placement^=left] [data-animation=perspective][data-state=hidden] {
+        opacity: 0;
+        -webkit-transform: perspective(700px) rotateY(-60deg);
+        transform: perspective(700px) rotateY(-60deg)
+    }
+
+    .tippy-popper[x-placement^=left] [data-animation=fade][data-state=visible] {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px)
+    }
+
+    .tippy-popper[x-placement^=left] [data-animation=fade][data-state=hidden] {
+        opacity: 0;
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px)
+    }
+
+    .tippy-popper[x-placement^=left] [data-animation=shift-away][data-state=visible] {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px)
+    }
+
+    .tippy-popper[x-placement^=left] [data-animation=shift-away][data-state=hidden] {
+        opacity: 0
+    }
+
+    .tippy-popper[x-placement^=left] [data-animation=scale] {
+        -webkit-transform-origin: right;
+        transform-origin: right
+    }
+
+    .tippy-popper[x-placement^=left] [data-animation=scale][data-state=visible] {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px)
+    }
+
+    .tippy-popper[x-placement^=left] [data-animation=scale][data-state=hidden] {
+        opacity: 0;
+        -webkit-transform: translateX(-10px) scale(.5);
+        transform: translateX(-10px) scale(.5)
+    }
+
+    .tippy-popper[x-placement^=right] .tippy-backdrop {
+        border-radius: 0 50% 50% 0
+    }
+
+    .tippy-popper[x-placement^=right] .tippy-roundarrow {
+        left: -12px;
+        -webkit-transform-origin: 66.66666666% 50%;
+        transform-origin: 66.66666666% 50%;
+        margin: 3px 0
+    }
+
+    .tippy-popper[x-placement^=right] .tippy-roundarrow svg {
+        position: absolute;
+        left: 0;
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg)
+    }
+
+    .tippy-popper[x-placement^=right] .tippy-arrow {
+        border-right: 8px solid #333;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        left: -7px;
+        margin: 3px 0;
+        -webkit-transform-origin: 100% 50%;
+        transform-origin: 100% 50%
+    }
+
+    .tippy-popper[x-placement^=right] .tippy-backdrop {
+        -webkit-transform-origin: -50% 0;
+        transform-origin: -50% 0
+    }
+
+    .tippy-popper[x-placement^=right] .tippy-backdrop[data-state=visible] {
+        -webkit-transform: scale(1) translate(-50%, -50%);
+        transform: scale(1) translate(-50%, -50%)
+    }
+
+    .tippy-popper[x-placement^=right] .tippy-backdrop[data-state=hidden] {
+        -webkit-transform: scale(.2) translate(-25%, -50%);
+        transform: scale(.2) translate(-25%, -50%);
+        opacity: 0
+    }
+
+    .tippy-popper[x-placement^=right] [data-animation=shift-toward][data-state=visible] {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px)
+    }
+
+    .tippy-popper[x-placement^=right] [data-animation=shift-toward][data-state=hidden] {
+        opacity: 0;
+        -webkit-transform: translateX(20px);
+        transform: translateX(20px)
+    }
+
+    .tippy-popper[x-placement^=right] [data-animation=perspective] {
+        -webkit-transform-origin: left;
+        transform-origin: left
+    }
+
+    .tippy-popper[x-placement^=right] [data-animation=perspective][data-state=visible] {
+        -webkit-transform: perspective(700px) translateX(10px);
+        transform: perspective(700px) translateX(10px)
+    }
+
+    .tippy-popper[x-placement^=right] [data-animation=perspective][data-state=hidden] {
+        opacity: 0;
+        -webkit-transform: perspective(700px) rotateY(60deg);
+        transform: perspective(700px) rotateY(60deg)
+    }
+
+    .tippy-popper[x-placement^=right] [data-animation=fade][data-state=visible] {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px)
+    }
+
+    .tippy-popper[x-placement^=right] [data-animation=fade][data-state=hidden] {
+        opacity: 0;
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px)
+    }
+
+    .tippy-popper[x-placement^=right] [data-animation=shift-away][data-state=visible] {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px)
+    }
+
+    .tippy-popper[x-placement^=right] [data-animation=shift-away][data-state=hidden] {
+        opacity: 0
+    }
+
+    .tippy-popper[x-placement^=right] [data-animation=scale] {
+        -webkit-transform-origin: left;
+        transform-origin: left
+    }
+
+    .tippy-popper[x-placement^=right] [data-animation=scale][data-state=visible] {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px)
+    }
+
+    .tippy-popper[x-placement^=right] [data-animation=scale][data-state=hidden] {
+        opacity: 0;
+        -webkit-transform: translateX(10px) scale(.5);
+        transform: translateX(10px) scale(.5)
+    }
+
+    .tippy-tooltip {
+        position: relative;
+        color: #fff;
+        border-radius: .25rem;
+        font-size: .875rem;
+        padding: .3125rem .5625rem;
+        line-height: 1.4;
+        text-align: center;
+        background-color: #333
+    }
+
+    .tippy-tooltip[data-size=small] {
+        padding: .1875rem .375rem;
+        font-size: .75rem
+    }
+
+    .tippy-tooltip[data-size=large] {
+        padding: .375rem .75rem;
+        font-size: 1rem
+    }
+
+    .tippy-tooltip[data-animatefill] {
+        overflow: hidden;
+        background-color: initial
+    }
+
+    .tippy-tooltip[data-interactive], .tippy-tooltip[data-interactive] .tippy-roundarrow path {
+        pointer-events: auto
+    }
+
+    .tippy-tooltip[data-inertia][data-state=visible] {
+        transition-timing-function: cubic-bezier(.54, 1.5, .38, 1.11)
+    }
+
+    .tippy-tooltip[data-inertia][data-state=hidden] {
+        transition-timing-function: ease
+    }
+
+    .tippy-arrow, .tippy-roundarrow {
+        position: absolute;
+        width: 0;
+        height: 0
+    }
+
+    .tippy-roundarrow {
+        width: 18px;
+        height: 7px;
+        fill: #333;
+        pointer-events: none
+    }
+
+    .tippy-backdrop {
+        position: absolute;
+        background-color: #333;
+        border-radius: 50%;
+        width: calc(110% + 2rem);
+        left: 50%;
+        top: 50%;
+        z-index: -1;
+        transition: all cubic-bezier(.46, .1, .52, .98);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden
+    }
+
+    .tippy-backdrop:after {
+        content: "";
+        float: left;
+        padding-top: 100%
+    }
+
+    .tippy-backdrop + .tippy-content {
+        transition-property: opacity;
+        will-change: opacity
+    }
+
+    .tippy-backdrop + .tippy-content[data-state=hidden] {
+        opacity: 0
+    }</style>
+    <style type="text/css">@charset "UTF-8";
+    [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak, .ng-hide:not(.ng-hide-animate) {
+        display: none !important;
+    }
+
+    ng\:form {
+        display: block;
+    }
+
+    .ng-animate-shim {
+        visibility: hidden;
+    }
+
+    .ng-anchor {
+        position: absolute;
+    }</style>
+
+    <link href="./187145_files/style-new.css" rel="stylesheet" type="text/css">
+
+
+    <!--<base href="/">-->
+    <base href=".">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <!--		<script>
+                var UserObj ={"id":0,"jwt":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiMCJ9.mY3pvHWQgO_R6UDF8DxkjSqZamCfEwLs8KuUixczx_A","obj_key":"9:0","nickname":null,"username":null,"avatar":"\/files\/avatars\/avatar.png","birthday":null,"chatToken":"198d8e03ee66a8a673754c29f481dc32","premiums":[],"donates":[],"webmaster":false,"placeholder":false};
+            </script>-->
+    <link rel="stylesheet" type="text/css" href="./187145_files/style-new(1).css">
+    <link rel="stylesheet" type="text/css" href="./187145_files/fonts.css">
+    <!--<script type="text/javascript" src="./187145_files/jquery-1.11.2.js.Без названия"></script>-->
+
+    <!--
+    <script>
+        var AJAX_PATH = '/ajax';
+        var WEB = 'https://goodgame.ru/';
+        var CHAT = 'chat-1.goodgame.ru';
+        var DEV = 0;
+        var GGObj = '';
+        window.timeLag = Date.now() - 1654975869000;
+    </script>
+    -->
+
+
+    <!--    <script>-->
+    <!--        $(function () {-->
+    <!--            Chat.openRoom('187145');-->
+    <!--        });-->
+    <!--    </script>-->
+    <style>.cke {
+        visibility: hidden;
+    }</style>
+    <!--    <script charset="utf-8" src="./187145_files/3.790c76707a7197834f7d.js.Без названия"></script>-->
+    <!--    <script charset="utf-8" src="./187145_files/4.de20162c54702fea4b3d.js.Без названия"></script>-->
+    <!--    <script charset="utf-8" src="./187145_files/8.e4e1af11c1aa45567472.js.Без названия"></script>-->
+    <!--    <script charset="utf-8" src="./187145_files/21.6e7a20768556a5080903.js.Без названия"></script>-->
+    <!--    <script charset="utf-8" src="./187145_files/16.877884576208d913da62.js.Без названия"></script>-->
+    <!--    <script charset="utf-8" src="./187145_files/23.751ad754e783015e8c53.js.Без названия"></script>-->
+    <!--<script charset="utf-8" src="./187145_files/common.9c6a0eb44a7a96f69889.js.Без названия"></script>
+    <script charset="utf-8" src="./187145_files/44.a830eeb9cb2a0a5ede74.js.Без названия"></script>
+    <script charset="utf-8" src="./187145_files/1.043c4a662ba6d0e61427.js.Без названия"></script>
+    <script charset="utf-8" src="./187145_files/5.966dfbc1d201f38a3575.js.Без названия"></script><script charset="utf-8" src="./187145_files/7.d8d7af5e9a734e539980.js.Без названия"></script><script charset="utf-8" src="./187145_files/9.d2bb6e55469925b5e4e1.js.Без названия"></script><script charset="utf-8" src="./187145_files/14.ae80b2620430e231fe86.js.Без названия"></script><script charset="utf-8" src="./187145_files/24.502d480e51928e3cac0f.js.Без названия"></script><script charset="utf-8" src="./187145_files/27.935a73ae9ac04a22e51d.js.Без названия"></script><script charset="utf-8" src="./187145_files/100.3a02b973220fae27d6a8.js.Без названия"></script><script charset="utf-8" src="./187145_files/90.3e9bed8a300f5c4dd986.js.Без названия"></script><script charset="utf-8" src="./187145_files/22.b476625fa56e7c0490f0.js.Без названия"></script><script charset="utf-8" src="./187145_files/78.41f24718ce8658a7f84b.js.Без названия"></script><script charset="utf-8" src="./187145_files/71.128c14620f841dff54f6.js.Без названия"></script><script charset="utf-8" src="./187145_files/93.2468ce420d50a2053b9d.js.Без названия"></script><script charset="utf-8" src="./187145_files/58.28bce167a5a6e3f85391.js.Без названия"></script><script charset="utf-8" src="./187145_files/105.c5cd3f433fcd5ccec1ac.js.Без названия"></script><script charset="utf-8" src="./187145_files/13.6668b9a1768f7ada5dc9.js.Без названия"></script><script charset="utf-8" src="./187145_files/80.9c77e3edf951e9ef7228.js.Без названия"></script><script charset="utf-8" src="./187145_files/104.b6a807e0eb70e4ef5771.js.Без названия"></script><script charset="utf-8" src="./187145_files/81.3fbef29da3a9a8da4fd9.js.Без названия"></script><script charset="utf-8" src="./187145_files/47.37688919a44834f180f4.js.Без названия"></script>-->
+    <style>.smiles-list-block[_ngcontent-lqu-c0] {
+        display: inline-block;
+        padding-right: 10px
+    }
+
+    .favorite-smiles[_ngcontent-lqu-c0] {
+        max-height: 130px;
+        overflow: hidden
+    }</style>
+    <style>[_nghost-lqu-c1] {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1
+    }</style>
+</head>
+<body class="scrollable">
+<!-- ngInclude: -->
+<ng-include src="&#39;/html/feed/chat.html&#39;" class="ng-scope"><!--
+<div class="restream-block flex">
+    <div class="streamer flex">
+        <img src="/images/svg/ic-lightning.svg" alt="">
+        <span class="nick">Abver</span>
+    </div>
+    <div class="btn-block flex">
+        <button class="btn btn-blue">Перейти на канал</button>
+        <div class="icon icon-close3"></div>
+    </div>
+</div>
+<div class="teleport-notify">
+    <button class="icon icon-close"></button>
+    <div class="title">Только что</div>
+    <div class="flex">
+        <div class="avatar" style="background-image:url('/files/avatars/av_91633_2XB4.png');"></div>
+        <div class="text-block">
+            Вы телепортируетесь на канал <a href="">Happa_</a> через 00:15
+        </div>
+    </div>
+    <button class="btn btn-transparent wide">Отменить</button>
+</div>
+-->
+
+    <div class="chat-container big-smiles animated-smiles chat-container_new-guy premium-icon-187145"
+         ng-controller="ggChat as vm" ng-class="{
+     &#39;big-smiles&#39;:vm.settings.smilesType &gt; 1,
+     &#39;animated-smiles&#39;:vm.settings.smilesType == 4,
+     &#39;task-one&#39;: vm.countPinnedQuest === 1,
+     &#39;task-two&#39;: vm.countPinnedQuest === 2,
+     &#39;task-three&#39;: vm.countPinnedQuest &gt;= 3,
+     &#39;prem-shout&#39;: vm.room.notify,
+     &#39;chat-container_new-guy&#39;: !vm.room.user.id
+     }">
+
+        <gg-pinned-quest [user]="vm.room.streamer.id" [tasks]="vm.pinnedQuests"
+                         (count-pin-task)="vm.setCountPinnedQuest($event)" (replenish)="vm.replenish($event)"
+                         (paste-nick)="vm.pasteNick($event)" class="ng-scope active" _nghost-lqu-c1=""
+                         ng-version="7.2.15"><!----><!----><!----><!----><!----><!----><!----></gg-pinned-quest>
+
+        <!-- ngIf: vm.room.notify -->
+
+        <div class="help-block" style="display: none; left: 731px; top: 262px;">06.04 23:52:19</div>
+        <div class="user-context-menu ng-hide" ng-show="vm.view.user" ng-click="vm.view.user=false"
+             gg-click-outside="vm.view.user=false">
+            <!-- ngIf: (vm.room.user.rights || vm.view.message.user.id == vm.room.user.id) && vm.view.message -->
+            <!-- ngIf: vm.room.user.rights -->
+            <!-- ngIf: vm.room.user.rights && !vm.view.user.banned -->
+            <!-- ngIf: vm.room.user.rights && !vm.view.user.banned -->
+            <!-- ngIf: vm.room.user.rights && vm.view.user.banned && vm.view.user.banned!=undefined -->
+            <!-- ngIf: vm.room.user.rights>10 && vm.view.user.rights < 10 -->
+            <!-- ngIf: vm.room.user.rights>10 && vm.view.user.rights == 10 -->
+            <a href="https://goodgame.ru/" ng-click="vm.view.pasteNick(vm.view.user.nickname, 1)">Написать лично</a>
+            <!-- ngIf: vm.view.user.isCup -->
+            <a ng-href="/user//" ng-click="vm.profileClick($event)" href="https://goodgame.ru/user//">Профиль</a>
+            <a href="https://goodgame.ru/" ng-click="vm.Chat.rooms.addToIgnoreList(vm.view.user.id, vm.room.user.id)">В
+                игнор-лист</a>
+            <a ng-href="/user//nicknamehistory" ng-click="vm.nicknamehistoryClick($event)"
+               href="https://goodgame.ru/user//nicknamehistory">Прошлые
+                ники</a>
+        </div>
+        <div class="content-window" ng-class="{loading: !vm.room.messages.loaded}" chat-messages="">
+            <div class="bg-block"></div>
+            <canvas id="snow"></canvas>
+            <div class="tse-scrollable" gg-scrollable="">
+                <div class="tse-scrollbar" style="display: block;">
+                    <div class="drag-handle" style="top: 78px; height: 560px;"></div>
+                </div>
+                <div class="tse-scroll-content" style="width: 1554px; height: 634px;">
+                    <div class="tse-content">
+                        <ng-transclude>
+                            <div class="chat-section ng-scope"
+                                 ng-class="{&#39;ban-icon&#39;: vm.room.user.rights &amp;&amp; vm.settings.quickBan,&#39;delete-icon&#39;:vm.room.user.rights &amp;&amp; vm.settings.quickDelete, format: vm.settings.alignType &gt; 0}">
+                                <!-- ngRepeat: message in vm.room.messages -->
+                                <!-- ngIf: (!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) && !message.hide -->
+                                <div class="message-block "
+                                     ng-if="(!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) &amp;&amp; !message.hide"
+                                     ng-class="{deleted: message.deleted, private: message.mine, bubble: message.private, gift: message.gift}"
+                                     ng-repeat="message in vm.room.messages" tooltip="06.04 23:45:44">
+                                    <!-- ngIf: message.user.nickname -->
+                                    <div class="user ng-scope" ng-if="message.user.nickname">
+                                        <!-- ngIf: message.mine && message.private -->
+                                        <!-- ngIf: message.private && !message.mine -->
+                                        <a href="https://goodgame.ru/" ng-click="message.remove()"
+                                           class="delete icon icon-trash-chat ng-isolate-scope"
+                                           tooltip="Удалить сообщение"></a>
+                                        <a href="https://goodgame.ru/" ng-click="vm.banUser(message.user, message)"
+                                           class="ban icon icon-ban-chat ng-isolate-scope" tooltip="Бан aaaplayer"></a>
+                                        <chat-user user-obj="::message.user" message="::message"
+                                                   class="ng-isolate-scope"><a ng-href="/user/831332"
+                                                                               ng-click="$event.preventDefault();vm.view.pasteNick(userObj.nickname, userObj.private, false, &#39;user&#39;)"
+                                                                               class="nick simple"
+                                                                               href="https://goodgame.ru/user/831332"><span
+                                            class="icon icon-none " tooltip=" none"></span>aaaplayer</a></chat-user>
+                                    </div><!-- end ngIf: message.user.nickname -->
+
+                                    <div class="message ng-isolate-scope" parse-message="message.text"
+                                         preserve-html="message.html" event-data="vm.parseEvent">размер шрифта больше
+                                        сделай, ниче нечитаемо
+                                    </div>
+
+                                    <!-- ngIf: message.adminName -->
+                                </div>
+                                <!-- end ngIf: (!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) && !message.hide -->
+                                <!-- end ngRepeat: message in vm.room.messages -->
+                                <!-- ngIf: (!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) && !message.hide -->
+                                <div class="message-block "
+                                     ng-if="(!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) &amp;&amp; !message.hide"
+                                     ng-class="{deleted: message.deleted, private: message.mine, bubble: message.private, gift: message.gift}"
+                                     ng-repeat="message in vm.room.messages" tooltip="06.04 23:46:01">
+                                    <!-- ngIf: message.user.nickname -->
+                                    <div class="user ng-scope" ng-if="message.user.nickname">
+                                        <!-- ngIf: message.mine && message.private -->
+                                        <!-- ngIf: message.private && !message.mine -->
+                                        <a href="https://goodgame.ru/" ng-click="message.remove()"
+                                           class="delete icon icon-trash-chat ng-isolate-scope"
+                                           tooltip="Удалить сообщение"></a>
+                                        <a href="https://goodgame.ru/" ng-click="vm.banUser(message.user, message)"
+                                           class="ban icon icon-ban-chat ng-isolate-scope" tooltip="Бан aaaplayer"></a>
+                                        <chat-user user-obj="::message.user" message="::message"
+                                                   class="ng-isolate-scope"><a ng-href="/user/831332"
+                                                                               ng-click="$event.preventDefault();vm.view.pasteNick(userObj.nickname, userObj.private, false, &#39;user&#39;)"
+                                                                               class="nick simple"
+                                                                               href="https://goodgame.ru/user/831332"><span
+                                            class="icon icon-none " tooltip=" none"></span>aaaplayer</a></chat-user>
+                                    </div><!-- end ngIf: message.user.nickname -->
+
+                                    <div class="message ng-isolate-scope" parse-message="message.text"
+                                         preserve-html="message.html" event-data="vm.parseEvent">у тебя вроде как окно
+                                        сжато
+                                    </div>
+
+                                    <!-- ngIf: message.adminName -->
+                                </div>
+                                <!-- end ngIf: (!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) && !message.hide -->
+                                <!-- end ngRepeat: message in vm.room.messages -->
+                                <!-- ngIf: (!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) && !message.hide -->
+                                <div class="message-block "
+                                     ng-if="(!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) &amp;&amp; !message.hide"
+                                     ng-class="{deleted: message.deleted, private: message.mine, bubble: message.private, gift: message.gift}"
+                                     ng-repeat="message in vm.room.messages" tooltip="06.04 23:46:30">
+                                    <!-- ngIf: message.user.nickname -->
+                                    <div class="user ng-scope" ng-if="message.user.nickname">
+                                        <!-- ngIf: message.mine && message.private -->
+                                        <!-- ngIf: message.private && !message.mine -->
+                                        <a href="https://goodgame.ru/" ng-click="message.remove()"
+                                           class="delete icon icon-trash-chat ng-isolate-scope"
+                                           tooltip="Удалить сообщение"></a>
+                                        <a href="https://goodgame.ru/" ng-click="vm.banUser(message.user, message)"
+                                           class="ban icon icon-ban-chat ng-isolate-scope" tooltip="Бан aaaplayer"></a>
+                                        <chat-user user-obj="::message.user" message="::message"
+                                                   class="ng-isolate-scope"><a ng-href="/user/831332"
+                                                                               ng-click="$event.preventDefault();vm.view.pasteNick(userObj.nickname, userObj.private, false, &#39;user&#39;)"
+                                                                               class="nick simple"
+                                                                               href="https://goodgame.ru/user/831332"><span
+                                            class="icon icon-none " tooltip=" none"></span>aaaplayer</a></chat-user>
+                                    </div><!-- end ngIf: message.user.nickname -->
+
+                                    <div class="message ng-isolate-scope" parse-message="message.text"
+                                         preserve-html="message.html" event-data="vm.parseEvent">возможно не показывает
+                                        потому что не залогинен
+                                    </div>
+
+                                    <!-- ngIf: message.adminName -->
+                                </div>
+                                <!-- end ngIf: (!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) && !message.hide -->
+                                <!-- end ngRepeat: message in vm.room.messages -->
+                                <!-- ngIf: (!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) && !message.hide -->
+                                <div class="message-block "
+                                     ng-if="(!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) &amp;&amp; !message.hide"
+                                     ng-class="{deleted: message.deleted, private: message.mine, bubble: message.private, gift: message.gift}"
+                                     ng-repeat="message in vm.room.messages" tooltip="06.04 23:46:36">
+                                    <!-- ngIf: message.user.nickname -->
+                                    <div class="user ng-scope" ng-if="message.user.nickname">
+                                        <!-- ngIf: message.mine && message.private -->
+                                        <!-- ngIf: message.private && !message.mine -->
+                                        <a href="https://goodgame.ru/" ng-click="message.remove()"
+                                           class="delete icon icon-trash-chat ng-isolate-scope"
+                                           tooltip="Удалить сообщение"></a>
+                                        <a href="https://goodgame.ru/" ng-click="vm.banUser(message.user, message)"
+                                           class="ban icon icon-ban-chat ng-isolate-scope" tooltip="Бан aaaplayer"></a>
+                                        <chat-user user-obj="::message.user" message="::message"
+                                                   class="ng-isolate-scope"><a ng-href="/user/831332"
+                                                                               ng-click="$event.preventDefault();vm.view.pasteNick(userObj.nickname, userObj.private, false, &#39;user&#39;)"
+                                                                               class="nick simple"
+                                                                               href="https://goodgame.ru/user/831332"><span
+                                            class="icon icon-none " tooltip=" none"></span>aaaplayer</a></chat-user>
+                                    </div><!-- end ngIf: message.user.nickname -->
+
+                                    <div class="message ng-isolate-scope" parse-message="message.text"
+                                         preserve-html="message.html" event-data="vm.parseEvent">нам есть настройки чата
+                                    </div>
+
+                                    <!-- ngIf: message.adminName -->
+                                </div>
+                                <!-- end ngIf: (!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) && !message.hide -->
+                                <!-- end ngRepeat: message in vm.room.messages -->
+                                <!-- ngIf: (!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) && !message.hide -->
+                                <div class="message-block "
+                                     ng-if="(!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) &amp;&amp; !message.hide"
+                                     ng-class="{deleted: message.deleted, private: message.mine, bubble: message.private, gift: message.gift}"
+                                     ng-repeat="message in vm.room.messages" tooltip="06.04 23:46:42">
+                                    <!-- ngIf: message.user.nickname -->
+                                    <div class="user ng-scope" ng-if="message.user.nickname">
+                                        <!-- ngIf: message.mine && message.private -->
+                                        <!-- ngIf: message.private && !message.mine -->
+                                        <a href="https://goodgame.ru/" ng-click="message.remove()"
+                                           class="delete icon icon-trash-chat ng-isolate-scope"
+                                           tooltip="Удалить сообщение"></a>
+                                        <a href="https://goodgame.ru/" ng-click="vm.banUser(message.user, message)"
+                                           class="ban icon icon-ban-chat ng-isolate-scope" tooltip="Бан aaaplayer"></a>
+                                        <chat-user user-obj="::message.user" message="::message"
+                                                   class="ng-isolate-scope"><a ng-href="/user/831332"
+                                                                               ng-click="$event.preventDefault();vm.view.pasteNick(userObj.nickname, userObj.private, false, &#39;user&#39;)"
+                                                                               class="nick simple"
+                                                                               href="https://goodgame.ru/user/831332"><span
+                                            class="icon icon-none " tooltip=" none"></span>aaaplayer</a></chat-user>
+                                    </div><!-- end ngIf: message.user.nickname -->
+
+                                    <div class="message ng-isolate-scope" parse-message="message.text"
+                                         preserve-html="message.html" event-data="vm.parseEvent">без логина они скрыты
+                                    </div>
+
+                                    <!-- ngIf: message.adminName -->
+                                </div>
+                                <!-- end ngIf: (!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) && !message.hide -->
+                                <!-- end ngRepeat: message in vm.room.messages -->
+                                <!-- ngIf: (!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) && !message.hide -->
+                                <div class="message-block "
+                                     ng-if="(!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) &amp;&amp; !message.hide"
+                                     ng-class="{deleted: message.deleted, private: message.mine, bubble: message.private, gift: message.gift}"
+                                     ng-repeat="message in vm.room.messages" tooltip="06.04 23:47:57">
+                                    <!-- ngIf: message.user.nickname -->
+                                    <div class="user ng-scope" ng-if="message.user.nickname">
+                                        <!-- ngIf: message.mine && message.private -->
+                                        <!-- ngIf: message.private && !message.mine -->
+                                        <a href="https://goodgame.ru/" ng-click="message.remove()"
+                                           class="delete icon icon-trash-chat ng-isolate-scope"
+                                           tooltip="Удалить сообщение"></a>
+                                        <a href="https://goodgame.ru/" ng-click="vm.banUser(message.user, message)"
+                                           class="ban icon icon-ban-chat ng-isolate-scope" tooltip="Бан aaaplayer"></a>
+                                        <chat-user user-obj="::message.user" message="::message"
+                                                   class="ng-isolate-scope"><a ng-href="/user/831332"
+                                                                               ng-click="$event.preventDefault();vm.view.pasteNick(userObj.nickname, userObj.private, false, &#39;user&#39;)"
+                                                                               class="nick simple"
+                                                                               href="https://goodgame.ru/user/831332"><span
+                                            class="icon icon-none " tooltip=" none"></span>aaaplayer</a></chat-user>
+                                    </div><!-- end ngIf: message.user.nickname -->
+
+                                    <div class="message ng-isolate-scope" parse-message="message.text"
+                                         preserve-html="message.html" event-data="vm.parseEvent">сколько не пробовал их
+                                        использовать они жутко неудобные
+                                    </div>
+
+                                    <!-- ngIf: message.adminName -->
+                                </div>
+                                <!-- end ngIf: (!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) && !message.hide -->
+                                <!-- end ngRepeat: message in vm.room.messages -->
+                                <!-- ngIf: (!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) && !message.hide -->
+                                <div class="message-block "
+                                     ng-if="(!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) &amp;&amp; !message.hide"
+                                     ng-class="{deleted: message.deleted, private: message.mine, bubble: message.private, gift: message.gift}"
+                                     ng-repeat="message in vm.room.messages" tooltip="06.04 23:48:51">
+                                    <!-- ngIf: message.user.nickname -->
+                                    <div class="user ng-scope" ng-if="message.user.nickname">
+                                        <!-- ngIf: message.mine && message.private -->
+                                        <!-- ngIf: message.private && !message.mine -->
+                                        <a href="https://goodgame.ru/" ng-click="message.remove()"
+                                           class="delete icon icon-trash-chat ng-isolate-scope"
+                                           tooltip="Удалить сообщение"></a>
+                                        <a href="https://goodgame.ru/" ng-click="vm.banUser(message.user, message)"
+                                           class="ban icon icon-ban-chat ng-isolate-scope" tooltip="Бан aaaplayer"></a>
+                                        <chat-user user-obj="::message.user" message="::message"
+                                                   class="ng-isolate-scope"><a ng-href="/user/831332"
+                                                                               ng-click="$event.preventDefault();vm.view.pasteNick(userObj.nickname, userObj.private, false, &#39;user&#39;)"
+                                                                               class="nick simple"
+                                                                               href="https://goodgame.ru/user/831332"><span
+                                            class="icon icon-none " tooltip=" none"></span>aaaplayer</a></chat-user>
+                                    </div><!-- end ngIf: message.user.nickname -->
+
+                                    <div class="message ng-isolate-scope" parse-message="message.text"
+                                         preserve-html="message.html" event-data="vm.parseEvent">а как он все перемешал
+                                    </div>
+
+                                    <!-- ngIf: message.adminName -->
+                                </div>
+                                <!-- end ngIf: (!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) && !message.hide -->
+                                <!-- end ngRepeat: message in vm.room.messages -->
+                                <!-- ngIf: (!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) && !message.hide -->
+                                <div class="message-block "
+                                     ng-if="(!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) &amp;&amp; !message.hide"
+                                     ng-class="{deleted: message.deleted, private: message.mine, bubble: message.private, gift: message.gift}"
+                                     ng-repeat="message in vm.room.messages" tooltip="06.04 23:49:25">
+                                    <!-- ngIf: message.user.nickname -->
+                                    <div class="user ng-scope" ng-if="message.user.nickname">
+                                        <!-- ngIf: message.mine && message.private -->
+                                        <!-- ngIf: message.private && !message.mine -->
+                                        <a href="https://goodgame.ru/" ng-click="message.remove()"
+                                           class="delete icon icon-trash-chat ng-isolate-scope"
+                                           tooltip="Удалить сообщение"></a>
+                                        <a href="https://goodgame.ru/" ng-click="vm.banUser(message.user, message)"
+                                           class="ban icon icon-ban-chat ng-isolate-scope" tooltip="Бан korney4eg"></a>
+                                        <chat-user user-obj="::message.user" message="::message"
+                                                   class="ng-isolate-scope"><a ng-href="/user/1344232"
+                                                                               ng-click="$event.preventDefault();vm.view.pasteNick(userObj.nickname, userObj.private, false, &#39;user&#39;)"
+                                                                               class="nick streamer"
+                                                                               href="https://goodgame.ru/user/1344232"><span
+                                            class="icon icon-top1 " tooltip=" Топ 1 поддержка"></span>korney4eg</a>
+                                        </chat-user>
+                                    </div><!-- end ngIf: message.user.nickname -->
+
+                                    <div class="message ng-isolate-scope" parse-message="message.text"
+                                         preserve-html="message.html" event-data="vm.parseEvent"><a
+                                        href="https://github.com/Swordfish90/cool-retro-term" rel="noopener noreferrer"
+                                        target="_blank">github.com/Swo…h90/cool-retro-term</a></div>
+
+                                    <!-- ngIf: message.adminName -->
+                                </div>
+                                <!-- end ngIf: (!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) && !message.hide -->
+                                <!-- end ngRepeat: message in vm.room.messages -->
+                                <!-- ngIf: (!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) && !message.hide -->
+                                <div class="message-block "
+                                     ng-if="(!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) &amp;&amp; !message.hide"
+                                     ng-class="{deleted: message.deleted, private: message.mine, bubble: message.private, gift: message.gift}"
+                                     ng-repeat="message in vm.room.messages" tooltip="06.04 23:49:47">
+                                    <!-- ngIf: message.user.nickname -->
+                                    <div class="user ng-scope" ng-if="message.user.nickname">
+                                        <!-- ngIf: message.mine && message.private -->
+                                        <!-- ngIf: message.private && !message.mine -->
+                                        <a href="https://goodgame.ru/" ng-click="message.remove()"
+                                           class="delete icon icon-trash-chat ng-isolate-scope"
+                                           tooltip="Удалить сообщение"></a>
+                                        <a href="https://goodgame.ru/" ng-click="vm.banUser(message.user, message)"
+                                           class="ban icon icon-ban-chat ng-isolate-scope" tooltip="Бан aaaplayer"></a>
+                                        <chat-user user-obj="::message.user" message="::message"
+                                                   class="ng-isolate-scope"><a ng-href="/user/831332"
+                                                                               ng-click="$event.preventDefault();vm.view.pasteNick(userObj.nickname, userObj.private, false, &#39;user&#39;)"
+                                                                               class="nick simple"
+                                                                               href="https://goodgame.ru/user/831332"><span
+                                            class="icon icon-none " tooltip=" none"></span>aaaplayer</a></chat-user>
+                                    </div><!-- end ngIf: message.user.nickname -->
+
+                                    <div class="message ng-isolate-scope" parse-message="message.text"
+                                         preserve-html="message.html" event-data="vm.parseEvent">а вы этим пользуетесь ?
+                                        нет, только показываем... красивое
+                                    </div>
+
+                                    <!-- ngIf: message.adminName -->
+                                </div>
+                                <!-- end ngIf: (!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) && !message.hide -->
+                                <!-- end ngRepeat: message in vm.room.messages -->
+                                <!-- ngIf: (!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) && !message.hide -->
+                                <div class="message-block "
+                                     ng-if="(!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) &amp;&amp; !message.hide"
+                                     ng-class="{deleted: message.deleted, private: message.mine, bubble: message.private, gift: message.gift}"
+                                     ng-repeat="message in vm.room.messages" tooltip="06.04 23:52:19">
+                                    <!-- ngIf: message.user.nickname -->
+                                    <div class="user ng-scope" ng-if="message.user.nickname">
+                                        <!-- ngIf: message.mine && message.private -->
+                                        <!-- ngIf: message.private && !message.mine -->
+                                        <a href="https://goodgame.ru/" ng-click="message.remove()"
+                                           class="delete icon icon-trash-chat ng-isolate-scope"
+                                           tooltip="Удалить сообщение"></a>
+                                        <a href="https://goodgame.ru/" ng-click="vm.banUser(message.user, message)"
+                                           class="ban icon icon-ban-chat ng-isolate-scope" tooltip="Бан aaaplayer"></a>
+                                        <chat-user user-obj="::message.user" message="::message"
+                                                   class="ng-isolate-scope"><a ng-href="/user/831332"
+                                                                               ng-click="$event.preventDefault();vm.view.pasteNick(userObj.nickname, userObj.private, false, &#39;user&#39;)"
+                                                                               class="nick simple"
+                                                                               href="https://goodgame.ru/user/831332"><span
+                                            class="icon icon-none " tooltip=" none"></span>aaaplayer</a></chat-user>
+                                    </div><!-- end ngIf: message.user.nickname -->
+
+                                    <div class="message ng-isolate-scope" parse-message="message.text"
+                                         preserve-html="message.html" event-data="vm.parseEvent">ник другой возьми
+                                    </div>
+
+                                    <!-- ngIf: message.adminName -->
+                                </div>
+                                <!-- end ngIf: (!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) && !message.hide -->
+                                <!-- end ngRepeat: message in vm.room.messages -->
+                                <!-- ngIf: (!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) && !message.hide -->
+                                <div class="message-block "
+                                     ng-if="(!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) &amp;&amp; !message.hide"
+                                     ng-class="{deleted: message.deleted, private: message.mine, bubble: message.private, gift: message.gift}"
+                                     ng-repeat="message in vm.room.messages" tooltip="06.04 23:52:23">
+                                    <!-- ngIf: message.user.nickname -->
+                                    <div class="user ng-scope" ng-if="message.user.nickname">
+                                        <!-- ngIf: message.mine && message.private -->
+                                        <!-- ngIf: message.private && !message.mine -->
+                                        <a href="https://goodgame.ru/" ng-click="message.remove()"
+                                           class="delete icon icon-trash-chat ng-isolate-scope"
+                                           tooltip="Удалить сообщение"></a>
+                                        <a href="https://goodgame.ru/" ng-click="vm.banUser(message.user, message)"
+                                           class="ban icon icon-ban-chat ng-isolate-scope" tooltip="Бан aaaplayer"></a>
+                                        <chat-user user-obj="::message.user" message="::message"
+                                                   class="ng-isolate-scope"><a ng-href="/user/831332"
+                                                                               ng-click="$event.preventDefault();vm.view.pasteNick(userObj.nickname, userObj.private, false, &#39;user&#39;)"
+                                                                               class="nick simple"
+                                                                               href="https://goodgame.ru/user/831332"><span
+                                            class="icon icon-none " tooltip=" none"></span>aaaplayer</a></chat-user>
+                                    </div><!-- end ngIf: message.user.nickname -->
+
+                                    <div class="message ng-isolate-scope" parse-message="message.text"
+                                         preserve-html="message.html" event-data="vm.parseEvent">и не найдут
+                                    </div>
+
+                                    <!-- ngIf: message.adminName -->
+                                </div>
+                                <!-- end ngIf: (!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) && !message.hide -->
+                                <!-- end ngRepeat: message in vm.room.messages -->
+                                <!-- ngIf: (!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) && !message.hide -->
+                                <div class="message-block "
+                                     ng-if="(!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) &amp;&amp; !message.hide"
+                                     ng-class="{deleted: message.deleted, private: message.mine, bubble: message.private, gift: message.gift}"
+                                     ng-repeat="message in vm.room.messages" tooltip="06.04 23:53:09">
+                                    <!-- ngIf: message.user.nickname -->
+                                    <div class="user ng-scope" ng-if="message.user.nickname">
+                                        <!-- ngIf: message.mine && message.private -->
+                                        <!-- ngIf: message.private && !message.mine -->
+                                        <a href="https://goodgame.ru/" ng-click="message.remove()"
+                                           class="delete icon icon-trash-chat ng-isolate-scope"
+                                           tooltip="Удалить сообщение"></a>
+                                        <a href="https://goodgame.ru/" ng-click="vm.banUser(message.user, message)"
+                                           class="ban icon icon-ban-chat ng-isolate-scope" tooltip="Бан aaaplayer"></a>
+                                        <chat-user user-obj="::message.user" message="::message"
+                                                   class="ng-isolate-scope"><a ng-href="/user/831332"
+                                                                               ng-click="$event.preventDefault();vm.view.pasteNick(userObj.nickname, userObj.private, false, &#39;user&#39;)"
+                                                                               class="nick simple"
+                                                                               href="https://goodgame.ru/user/831332"><span
+                                            class="icon icon-none " tooltip=" none"></span>aaaplayer</a></chat-user>
+                                    </div><!-- end ngIf: message.user.nickname -->
+
+                                    <div class="message ng-isolate-scope" parse-message="message.text"
+                                         preserve-html="message.html" event-data="vm.parseEvent">пака
+                                    </div>
+
+                                    <!-- ngIf: message.adminName -->
+                                </div>
+                                <!-- end ngIf: (!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) && !message.hide -->
+                                <!-- end ngRepeat: message in vm.room.messages -->
+                                <!-- ngIf: (!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) && !message.hide -->
+                                <div class="message-block "
+                                     ng-if="(!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) &amp;&amp; !message.hide"
+                                     ng-class="{deleted: message.deleted, private: message.mine, bubble: message.private, gift: message.gift}"
+                                     ng-repeat="message in vm.room.messages" tooltip="06.04 23:53:19">
+                                    <!-- ngIf: message.user.nickname -->
+                                    <div class="user ng-scope" ng-if="message.user.nickname">
+                                        <!-- ngIf: message.mine && message.private -->
+                                        <!-- ngIf: message.private && !message.mine -->
+                                        <a href="https://goodgame.ru/" ng-click="message.remove()"
+                                           class="delete icon icon-trash-chat ng-isolate-scope"
+                                           tooltip="Удалить сообщение"></a>
+                                        <a href="https://goodgame.ru/" ng-click="vm.banUser(message.user, message)"
+                                           class="ban icon icon-ban-chat ng-isolate-scope" tooltip="Бан HerrDima"></a>
+                                        <chat-user user-obj="::message.user" message="::message"
+                                                   class="ng-isolate-scope"><a ng-href="/user/1498652"
+                                                                               ng-click="$event.preventDefault();vm.view.pasteNick(userObj.nickname, userObj.private, false, &#39;user&#39;)"
+                                                                               class="nick simple"
+                                                                               href="https://goodgame.ru/user/1498652"><span
+                                            class="icon icon-none " tooltip=" none"></span>HerrDima</a></chat-user>
+                                    </div><!-- end ngIf: message.user.nickname -->
+
+                                    <div class="message ng-isolate-scope" parse-message="message.text"
+                                         preserve-html="message.html" event-data="vm.parseEvent">hej då
+                                    </div>
+
+                                    <!-- ngIf: message.adminName -->
+                                </div>
+                                <!-- end ngIf: (!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) && !message.hide -->
+                                <!-- end ngRepeat: message in vm.room.messages -->
+                                <!-- ngIf: (!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) && !message.hide -->
+                                <div class="message-block "
+                                     ng-if="(!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) &amp;&amp; !message.hide"
+                                     ng-class="{deleted: message.deleted, private: message.mine, bubble: message.private, gift: message.gift}"
+                                     ng-repeat="message in vm.room.messages" tooltip="20.04 20:59:31">
+                                    <!-- ngIf: message.user.nickname -->
+                                    <div class="user ng-scope" ng-if="message.user.nickname">
+                                        <!-- ngIf: message.mine && message.private -->
+                                        <!-- ngIf: message.private && !message.mine -->
+                                        <a href="https://goodgame.ru/" ng-click="message.remove()"
+                                           class="delete icon icon-trash-chat ng-isolate-scope"
+                                           tooltip="Удалить сообщение"></a>
+                                        <a href="https://goodgame.ru/" ng-click="vm.banUser(message.user, message)"
+                                           class="ban icon icon-ban-chat ng-isolate-scope" tooltip="Бан HerrDima"></a>
+                                        <chat-user user-obj="::message.user" message="::message"
+                                                   class="ng-isolate-scope"><a ng-href="/user/1498652"
+                                                                               ng-click="$event.preventDefault();vm.view.pasteNick(userObj.nickname, userObj.private, false, &#39;user&#39;)"
+                                                                               class="nick simple"
+                                                                               href="https://goodgame.ru/user/1498652"><span
+                                            class="icon icon-none " tooltip=" none"></span>HerrDima</a></chat-user>
+                                    </div><!-- end ngIf: message.user.nickname -->
+
+                                    <div class="message ng-isolate-scope" parse-message="message.text"
+                                         preserve-html="message.html" event-data="vm.parseEvent">hej
+                                    </div>
+
+                                    <!-- ngIf: message.adminName -->
+                                </div>
+                                <!-- end ngIf: (!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) && !message.hide -->
+                                <!-- end ngRepeat: message in vm.room.messages -->
+                                <!-- ngIf: (!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) && !message.hide -->
+                                <div class="message-block "
+                                     ng-if="(!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) &amp;&amp; !message.hide"
+                                     ng-class="{deleted: message.deleted, private: message.mine, bubble: message.private, gift: message.gift}"
+                                     ng-repeat="message in vm.room.messages" tooltip="20.04 21:00:45">
+                                    <!-- ngIf: message.user.nickname -->
+                                    <div class="user ng-scope" ng-if="message.user.nickname">
+                                        <!-- ngIf: message.mine && message.private -->
+                                        <!-- ngIf: message.private && !message.mine -->
+                                        <a href="https://goodgame.ru/" ng-click="message.remove()"
+                                           class="delete icon icon-trash-chat ng-isolate-scope"
+                                           tooltip="Удалить сообщение"></a>
+                                        <a href="https://goodgame.ru/" ng-click="vm.banUser(message.user, message)"
+                                           class="ban icon icon-ban-chat ng-isolate-scope" tooltip="Бан HerrDima"></a>
+                                        <chat-user user-obj="::message.user" message="::message"
+                                                   class="ng-isolate-scope"><a ng-href="/user/1498652"
+                                                                               ng-click="$event.preventDefault();vm.view.pasteNick(userObj.nickname, userObj.private, false, &#39;user&#39;)"
+                                                                               class="nick simple"
+                                                                               href="https://goodgame.ru/user/1498652"><span
+                                            class="icon icon-none " tooltip=" none"></span>HerrDima</a></chat-user>
+                                    </div><!-- end ngIf: message.user.nickname -->
+
+                                    <div class="message ng-isolate-scope" parse-message="message.text"
+                                         preserve-html="message.html" event-data="vm.parseEvent">kan du start?
+                                    </div>
+
+                                    <!-- ngIf: message.adminName -->
+                                </div>
+                                <!-- end ngIf: (!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) && !message.hide -->
+                                <!-- end ngRepeat: message in vm.room.messages -->
+                                <!-- ngIf: (!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) && !message.hide -->
+                                <div class="message-block "
+                                     ng-if="(!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) &amp;&amp; !message.hide"
+                                     ng-class="{deleted: message.deleted, private: message.mine, bubble: message.private, gift: message.gift}"
+                                     ng-repeat="message in vm.room.messages" tooltip="20.04 22:14:21">
+                                    <!-- ngIf: message.user.nickname -->
+                                    <div class="user ng-scope" ng-if="message.user.nickname">
+                                        <!-- ngIf: message.mine && message.private -->
+                                        <!-- ngIf: message.private && !message.mine -->
+                                        <a href="https://goodgame.ru/" ng-click="message.remove()"
+                                           class="delete icon icon-trash-chat ng-isolate-scope"
+                                           tooltip="Удалить сообщение"></a>
+                                        <a href="https://goodgame.ru/" ng-click="vm.banUser(message.user, message)"
+                                           class="ban icon icon-ban-chat ng-isolate-scope" tooltip="Бан HerrDima"></a>
+                                        <chat-user user-obj="::message.user" message="::message"
+                                                   class="ng-isolate-scope"><a ng-href="/user/1498652"
+                                                                               ng-click="$event.preventDefault();vm.view.pasteNick(userObj.nickname, userObj.private, false, &#39;user&#39;)"
+                                                                               class="nick simple"
+                                                                               href="https://goodgame.ru/user/1498652"><span
+                                            class="icon icon-none " tooltip=" none"></span>HerrDima</a></chat-user>
+                                    </div><!-- end ngIf: message.user.nickname -->
+
+                                    <div class="message ng-isolate-scope" parse-message="message.text"
+                                         preserve-html="message.html" event-data="vm.parseEvent">brb
+                                    </div>
+
+                                    <!-- ngIf: message.adminName -->
+                                </div>
+                                <!-- end ngIf: (!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) && !message.hide -->
+                                <!-- end ngRepeat: message in vm.room.messages -->
+                                <!-- ngIf: (!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) && !message.hide -->
+                                <div class="message-block "
+                                     ng-if="(!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) &amp;&amp; !message.hide"
+                                     ng-class="{deleted: message.deleted, private: message.mine, bubble: message.private, gift: message.gift}"
+                                     ng-repeat="message in vm.room.messages" tooltip="20.04 22:18:13">
+                                    <!-- ngIf: message.user.nickname -->
+                                    <div class="user ng-scope" ng-if="message.user.nickname">
+                                        <!-- ngIf: message.mine && message.private -->
+                                        <!-- ngIf: message.private && !message.mine -->
+                                        <a href="https://goodgame.ru/" ng-click="message.remove()"
+                                           class="delete icon icon-trash-chat ng-isolate-scope"
+                                           tooltip="Удалить сообщение"></a>
+                                        <a href="https://goodgame.ru/" ng-click="vm.banUser(message.user, message)"
+                                           class="ban icon icon-ban-chat ng-isolate-scope" tooltip="Бан HerrDima"></a>
+                                        <chat-user user-obj="::message.user" message="::message"
+                                                   class="ng-isolate-scope"><a ng-href="/user/1498652"
+                                                                               ng-click="$event.preventDefault();vm.view.pasteNick(userObj.nickname, userObj.private, false, &#39;user&#39;)"
+                                                                               class="nick simple"
+                                                                               href="https://goodgame.ru/user/1498652"><span
+                                            class="icon icon-none " tooltip=" none"></span>HerrDima</a></chat-user>
+                                    </div><!-- end ngIf: message.user.nickname -->
+
+                                    <div class="message ng-isolate-scope" parse-message="message.text"
+                                         preserve-html="message.html" event-data="vm.parseEvent">back
+                                    </div>
+
+                                    <!-- ngIf: message.adminName -->
+                                </div>
+                                <!-- end ngIf: (!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) && !message.hide -->
+                                <!-- end ngRepeat: message in vm.room.messages -->
+                                <!-- ngIf: (!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) && !message.hide -->
+                                <div class="message-block "
+                                     ng-if="(!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) &amp;&amp; !message.hide"
+                                     ng-class="{deleted: message.deleted, private: message.mine, bubble: message.private, gift: message.gift}"
+                                     ng-repeat="message in vm.room.messages" tooltip="20.04 22:26:52">
+                                    <!-- ngIf: message.user.nickname -->
+                                    <div class="user ng-scope" ng-if="message.user.nickname">
+                                        <!-- ngIf: message.mine && message.private -->
+                                        <!-- ngIf: message.private && !message.mine -->
+                                        <a href="https://goodgame.ru/" ng-click="message.remove()"
+                                           class="delete icon icon-trash-chat ng-isolate-scope"
+                                           tooltip="Удалить сообщение"></a>
+                                        <a href="https://goodgame.ru/" ng-click="vm.banUser(message.user, message)"
+                                           class="ban icon icon-ban-chat ng-isolate-scope" tooltip="Бан HerrDima"></a>
+                                        <chat-user user-obj="::message.user" message="::message"
+                                                   class="ng-isolate-scope"><a ng-href="/user/1498652"
+                                                                               ng-click="$event.preventDefault();vm.view.pasteNick(userObj.nickname, userObj.private, false, &#39;user&#39;)"
+                                                                               class="nick simple"
+                                                                               href="https://goodgame.ru/user/1498652"><span
+                                            class="icon icon-none " tooltip=" none"></span>HerrDima</a></chat-user>
+                                    </div><!-- end ngIf: message.user.nickname -->
+
+                                    <div class="message ng-isolate-scope" parse-message="message.text"
+                                         preserve-html="message.html" event-data="vm.parseEvent">test
+                                    </div>
+
+                                    <!-- ngIf: message.adminName -->
+                                </div>
+                                <!-- end ngIf: (!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) && !message.hide -->
+                                <!-- end ngRepeat: message in vm.room.messages -->
+                                <!-- ngIf: (!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) && !message.hide -->
+                                <div class="message-block "
+                                     ng-if="(!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) &amp;&amp; !message.hide"
+                                     ng-class="{deleted: message.deleted, private: message.mine, bubble: message.private, gift: message.gift}"
+                                     ng-repeat="message in vm.room.messages" tooltip="20.04 23:18:08">
+                                    <!-- ngIf: message.user.nickname -->
+                                    <div class="user ng-scope" ng-if="message.user.nickname">
+                                        <!-- ngIf: message.mine && message.private -->
+                                        <!-- ngIf: message.private && !message.mine -->
+                                        <a href="https://goodgame.ru/" ng-click="message.remove()"
+                                           class="delete icon icon-trash-chat ng-isolate-scope"
+                                           tooltip="Удалить сообщение"></a>
+                                        <a href="https://goodgame.ru/" ng-click="vm.banUser(message.user, message)"
+                                           class="ban icon icon-ban-chat ng-isolate-scope" tooltip="Бан HerrDima"></a>
+                                        <chat-user user-obj="::message.user" message="::message"
+                                                   class="ng-isolate-scope"><a ng-href="/user/1498652"
+                                                                               ng-click="$event.preventDefault();vm.view.pasteNick(userObj.nickname, userObj.private, false, &#39;user&#39;)"
+                                                                               class="nick simple"
+                                                                               href="https://goodgame.ru/user/1498652"><span
+                                            class="icon icon-none " tooltip=" none"></span>HerrDima</a></chat-user>
+                                    </div><!-- end ngIf: message.user.nickname -->
+
+                                    <div class="message ng-isolate-scope" parse-message="message.text"
+                                         preserve-html="message.html" event-data="vm.parseEvent">Lisorius, hej
+                                    </div>
+
+                                    <!-- ngIf: message.adminName -->
+                                </div>
+                                <!-- end ngIf: (!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) && !message.hide -->
+                                <!-- end ngRepeat: message in vm.room.messages -->
+                                <!-- ngIf: (!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) && !message.hide -->
+                                <div class="message-block "
+                                     ng-if="(!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) &amp;&amp; !message.hide"
+                                     ng-class="{deleted: message.deleted, private: message.mine, bubble: message.private, gift: message.gift}"
+                                     ng-repeat="message in vm.room.messages" tooltip="27.04 23:14:31">
+                                    <!-- ngIf: message.user.nickname -->
+                                    <div class="user ng-scope" ng-if="message.user.nickname">
+                                        <!-- ngIf: message.mine && message.private -->
+                                        <!-- ngIf: message.private && !message.mine -->
+                                        <a href="https://goodgame.ru/" ng-click="message.remove()"
+                                           class="delete icon icon-trash-chat ng-isolate-scope"
+                                           tooltip="Удалить сообщение"></a>
+                                        <a href="https://goodgame.ru/" ng-click="vm.banUser(message.user, message)"
+                                           class="ban icon icon-ban-chat ng-isolate-scope" tooltip="Бан HerrDima"></a>
+                                        <chat-user user-obj="::message.user" message="::message"
+                                                   class="ng-isolate-scope"><a ng-href="/user/1498652"
+                                                                               ng-click="$event.preventDefault();vm.view.pasteNick(userObj.nickname, userObj.private, false, &#39;user&#39;)"
+                                                                               class="nick simple"
+                                                                               href="https://goodgame.ru/user/1498652"><span
+                                            class="icon icon-none " tooltip=" none"></span>HerrDima</a></chat-user>
+                                    </div><!-- end ngIf: message.user.nickname -->
+
+                                    <div class="message ng-isolate-scope" parse-message="message.text"
+                                         preserve-html="message.html" event-data="vm.parseEvent">test
+                                    </div>
+
+                                    <!-- ngIf: message.adminName -->
+                                </div>
+                                <!-- end ngIf: (!message.deleted || vm.room.user.rights || vm.room.user.id == message.user.id) && !message.hide -->
+                                <!-- end ngRepeat: message in vm.room.messages -->
+                                <div class="new-message-block" ng-class="{&#39;active&#39;:vm.room.newmsg}"
+                                     ng-click="vm.view.justScroll()">Новые сообщения ниже
+                                </div>
+                            </div>
+                        </ng-transclude>
+                    </div>
+                </div>
+            </div>
+            <!-- ngIf: vm.view.suggest && vm.view.suggest.value.length -->
+        </div>
+        <div class="chat-control-block" ng-show="vm.room">
+
+            <!-- ngIf: vm.newUserPopup === 0 --><span class="chat__newguy-msg ng-scope" ng-if="vm.newUserPopup === 0"
+                                                      ng-click="vm.newUserPopup = 1">
+            Поприветствовать стримера
+            <img src="./187145_files/brofist-gif.gif" width="75" height="36" alt="">
+        </span><!-- end ngIf: vm.newUserPopup === 0 -->
+
+            <!-- ngIf: vm.room.premiumOnly && !vm.room.user.canwrite -->
+
+            <div class="control-wrap">
+                <!-- ngIf: !vm.room.user -->
+                <div class="control-panel clearfix ng-scope" ng-if="!vm.room.user">
+                    <div class="pull-right">
+                        <!-- ngIf: vm.room.isStream() --><a href="https://goodgame.ru/" class="donate-block ng-scope"
+                                                            ng-if="vm.room.isStream()" ng-init="vm.donateRng()"
+                                                            ng-mouseover="vm.donateRng()"
+                                                            ng-class="{&#39;active&#39;: vm.view.donate}"
+                                                            ng-click="vm.toggleDonat()"
+                                                            style="background-color: rgb(16, 140, 134);">Донат</a>
+                        <!-- end ngIf: vm.room.isStream() -->
+
+                    </div>
+                </div><!-- end ngIf: !vm.room.user -->
+
+                <!-- ngIf: vm.room.user.canwrite || !vm.room.user -->
+                <div class="text-block ng-scope" ng-if="vm.room.user.canwrite || !vm.room.user">
+                    <a class="control streamer"
+                       ng-click="vm.view.pasteNick(vm.room.streamer.name, false, false, &#39;streamer&#39;)">
+                        <span class="icon icon-mention-streamer reply"></span>
+                    </a>
+                    <span class="tooltip tooltip_mention">Упомянуть стримера</span>
+                    <a class="control icon icon-smilemenu-icon smiles" ng-class="{active: vm.view.smiles}"
+                       ng-click="vm.toggleSmiles()"></a>
+                    <span class="tooltip tooltip_smiles">Вставить смайл</span>
+                    <div class="textarea" ng-class="{&#39;safari-styles&#39;: vm.isSafari}" contenteditable="true"
+                         chat-input="" placeholder="Написать сообщение..."></div>
+                </div><!-- end ngIf: vm.room.user.canwrite || !vm.room.user -->
+
+                <!-- ngIf: vm.room.user.canwrite -->
+            </div>
+
+        </div>
+        <!-- ngIf: vm.room -->
+        <div class="popup-wrap ng-scope" ng-if="vm.room">
+            <gg-motd room="vm.room" class="ng-isolate-scope"><!-- ngIf: motd.room.motd --></gg-motd>
+
+            <!-- ngIf: vm.room -->
+            <gg-popup id="smiles" class="popup-block smiles ng-scope" ng-if="vm.room">
+                <div class="smiles-panel tse-scrollable" gg-scrollable="">
+                    <div class="tse-scrollbar" style="display: none;">
+                        <div class="drag-handle"></div>
+                    </div>
+                    <div class="tse-scroll-content" style="width: 120px; height: 100px;">
+                        <div class="tse-content">
+                            <ng-transclude>
+                                <gg-smiles2 [room]="vm.room" [admin]="!!vm.room.user.rights"
+                                            (paste-smile)="vm.selectedSmile($event)" class="ng-scope" _nghost-lqu-c0=""
+                                            ng-version="7.2.15"><!----><!----><!---->
+                                    <div _ngcontent-lqu-c0="" class="smile-list"><!----><!----><!----><!----><!---->
+                                        <!----><!----><!----><!----><!---->
+                                        <div _ngcontent-lqu-c0="">
+                                            <div _ngcontent-lqu-c0="" class="streamer-name">Общие</div><!---->
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":gg:" class="animated smile gg">
+                                            </div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":peka:"
+                                                class="animated smile peka"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":scarypeka:"
+                                                class="animated smile scarypeka"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":pekaclap:"
+                                                class="animated smile pekaclap"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":comf:"
+                                                class="animated smile comf"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":ohmypeka:"
+                                                class="animated smile ohmypeka"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":pled:"
+                                                class="animated smile pled"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":gravitypeka:"
+                                                class="animated smile gravitypeka"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":insanepeka:"
+                                                class="animated smile insanepeka"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":kovipeka:"
+                                                class="animated smile kovipeka"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":rofl:"
+                                                class="animated smile rofl"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":omg:" class="animated smile omg">
+                                            </div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":shoked:"
+                                                class="animated smile shoked"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":wonder:"
+                                                class="animated smile wonder"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":daun:"
+                                                class="animated smile daun"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":panic:"
+                                                class="animated smile panic"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":huh:" class="animated smile huh">
+                                            </div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":sosp:"
+                                                class="animated smile sosp"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":notfunny:"
+                                                class="animated smile notfunny"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":cry:" class="animated smile cry">
+                                            </div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":cryalot:"
+                                                class="animated smile cryalot"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":cool:"
+                                                class="animated smile cool"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":sad:" class="animated smile sad">
+                                            </div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":smilegasm:"
+                                                class="animated smile smilegasm"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":marvelous:"
+                                                class="animated smile marvelous"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":happyface:"
+                                                class="animated smile happyface"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":wink:"
+                                                class="animated smile wink"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":geek:"
+                                                class="animated smile geek"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":sic:" class="animated smile sic">
+                                            </div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":kiss:"
+                                                class="animated smile kiss"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":yazik:"
+                                                class="animated smile yazik"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":zzz:" class="animated smile zzz">
+                                            </div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":angry:"
+                                                class="animated smile angry"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":rage:"
+                                                class="animated smile rage"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":skull:"
+                                                class="animated smile skull"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":smoon:"
+                                                class="animated smile smoon"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":fibod:"
+                                                class="animated smile fibod"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":fffibo:"
+                                                class="animated smile fffibo"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":fibo:"
+                                                class="animated smile fibo"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":deckard:"
+                                                class="animated smile deckard"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":tirael:"
+                                                class="animated smile tirael"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":diablo:"
+                                                class="animated smile diablo"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":gold:"
+                                                class="animated smile gold"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":moo:" class="animated smile moo">
+                                            </div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":mana:"
+                                                class="animated smile mana"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":sorka:"
+                                                class="animated smile sorka"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":doornoloot:"
+                                                class="animated smile doornoloot"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":pitlord:"
+                                                class="animated smile pitlord"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":jobagain:"
+                                                class="animated smile jobagain"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":acolyte:"
+                                                class="animated smile acolyte"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":archmage:"
+                                                class="animated smile archmage"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":artas:"
+                                                class="animated smile artas"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":keanu:"
+                                                class="animated smile keanu"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":gend:"
+                                                class="animated smile gend"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":dicaprio:"
+                                                class="animated smile dicaprio"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":fp:" class="animated smile fp">
+                                            </div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":kekw:"
+                                                class="animated smile kekw"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":walter:"
+                                                class="animated smile walter"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":kojima:"
+                                                class="animated smile kojima"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":gabe:"
+                                                class="animated smile gabe"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":bowsette:"
+                                                class="animated smile bowsette"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":joker:"
+                                                class="animated smile joker"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":jackie:"
+                                                class="animated smile jackie"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":exorcism:"
+                                                class="animated smile exorcism"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":vanga:"
+                                                class="animated smile vanga"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":think:"
+                                                class="animated smile think"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":badass:"
+                                                class="animated smile badass"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":evil:"
+                                                class="animated smile evil"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":whocares:"
+                                                class="animated smile whocares"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":karl:"
+                                                class="animated smile karl"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":pervyi:"
+                                                class="animated smile pervyi"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":strelka:"
+                                                class="animated smile strelka"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":belka:"
+                                                class="animated smile belka"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":sputnik:"
+                                                class="animated smile sputnik"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":drake:"
+                                                class="animated smile drake"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":slug:"
+                                                class="animated smile slug"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":sospfry:"
+                                                class="animated smile sospfry"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":fry:" class="animated smile fry">
+                                            </div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":goodnews:"
+                                                class="animated smile goodnews"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":bender:"
+                                                class="animated smile bender"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":homerdonut:"
+                                                class="animated smile homerdonut"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":homer:"
+                                                class="animated smile homer"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":respect:"
+                                                class="animated smile respect"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":boring:"
+                                                class="animated smile boring"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":thup:"
+                                                class="animated smile thup"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":charisma:"
+                                                class="animated smile charisma"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":dm:" class="animated smile dm">
+                                            </div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":bratok:"
+                                                class="animated smile bratok"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":rsp:" class="animated smile rsp">
+                                            </div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":metal:"
+                                                class="animated smile metal"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":lighter:"
+                                                class="animated smile lighter"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":hello:"
+                                                class="animated smile hello"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":brofist:"
+                                                class="animated smile brofist"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":slap:"
+                                                class="animated smile slap"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":gamepad1:"
+                                                class="animated smile gamepad1"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":gamepad2:"
+                                                class="animated smile gamepad2"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":chommander:"
+                                                class="animated smile chommander"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":flamer:"
+                                                class="animated smile flamer"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":bvecher:"
+                                                class="animated smile bvecher"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":alwayshb:"
+                                                class="animated smile alwayshb"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":sir:" class="animated smile sir">
+                                            </div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":busted:"
+                                                class="animated smile busted"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":bobrpirat:"
+                                                class="animated smile bobrpirat"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":oneone:"
+                                                class="animated smile oneone"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":fsb:" class="animated smile fsb">
+                                            </div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":pun:" class="animated smile pun">
+                                            </div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":bandages:"
+                                                class="animated smile bandages"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":winner:"
+                                                class="animated smile winner"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":waiting:"
+                                                class="animated smile waiting"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":buggy:"
+                                                class="animated smile buggy"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":loot:"
+                                                class="animated smile loot"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":megafon:"
+                                                class="animated smile megafon"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":toohot:"
+                                                class="animated smile toohot"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":snow:"
+                                                class="animated smile snow"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":heal:"
+                                                class="animated smile heal"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":pigeon:"
+                                                class="animated smile pigeon"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":www:" class="animated smile www">
+                                            </div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":flowers:"
+                                                class="animated smile flowers"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":fight:"
+                                                class="animated smile fight"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":darthbobr:"
+                                                class="animated smile darthbobr"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":sound:"
+                                                class="animated smile sound"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":nichobobr:"
+                                                class="animated smile nichobobr"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":jasonbobr:"
+                                                class="animated smile jasonbobr"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":beverly:"
+                                                class="animated smile beverly"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":smudge:"
+                                                class="animated smile smudge"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":bravo:"
+                                                class="animated smile bravo"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":hey:" class="animated smile hey">
+                                            </div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":sushicat:"
+                                                class="animated smile sushicat"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":flashl:"
+                                                class="animated smile flashl"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":noted:"
+                                                class="animated smile noted"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":catrain:"
+                                                class="animated smile catrain"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":giftcat:"
+                                                class="animated smile giftcat"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":gta:" class="animated smile gta">
+                                            </div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":nope:"
+                                                class="animated smile nope"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":snow2:"
+                                                class="animated smile snow2"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":bodyb:"
+                                                class="animated smile bodyb"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":runaway:"
+                                                class="animated smile runaway"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":awesome:"
+                                                class="animated smile awesome"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":whyyy:"
+                                                class="animated smile whyyy"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":yoyo:"
+                                                class="animated smile yoyo"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":selfie:"
+                                                class="animated smile selfie"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":search:"
+                                                class="animated smile search"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":cat:" class="animated smile cat">
+                                            </div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":plasma:"
+                                                class="animated smile plasma"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":catyes:"
+                                                class="animated smile catyes"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":catno:"
+                                                class="animated smile catno"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":catyuck:"
+                                                class="animated smile catyuck"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":badumtss:"
+                                                class="animated smile badumtss"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":bdbessa:"
+                                                class="animated smile bdbessa"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":bessa:"
+                                                class="animated smile bessa"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":catouh:"
+                                                class="animated smile catouh"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":grumpy:"
+                                                class="animated smile grumpy"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":fuckoff:"
+                                                class="animated smile fuckoff"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":vjuh:"
+                                                class="animated smile vjuh"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":nofeels:"
+                                                class="animated smile nofeels"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":whaaat:"
+                                                class="animated smile whaaat"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":getout:"
+                                                class="animated smile getout"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":ufreddie:"
+                                                class="animated smile ufreddie"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":master:"
+                                                class="animated smile master"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":doggie:"
+                                                class="animated smile doggie"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":chims:"
+                                                class="animated smile chims"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":detective:"
+                                                class="animated smile detective"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":forespect:"
+                                                class="animated smile forespect"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":lagdog:"
+                                                class="animated smile lagdog"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":myway:"
+                                                class="animated smile myway"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":clear:"
+                                                class="animated smile clear"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":mcomplete:"
+                                                class="animated smile mcomplete"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":sigh:"
+                                                class="animated smile sigh"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":thisisfine:"
+                                                class="animated smile thisisfine"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":sing:"
+                                                class="animated smile sing"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":tactics:"
+                                                class="animated smile tactics"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":support:"
+                                                class="animated smile support"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":comfort:"
+                                                class="animated smile comfort"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":dog2:"
+                                                class="animated smile dog2"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":hmmm:"
+                                                class="animated smile hmmm"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":pepcard:"
+                                                class="animated smile pepcard"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":pepelaugh:"
+                                                class="animated smile pepelaugh"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":pepehands:"
+                                                class="animated smile pepehands"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":poggers:"
+                                                class="animated smile poggers"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":monkas:"
+                                                class="animated smile monkas"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":pepoclown:"
+                                                class="animated smile pepoclown"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":shmm:"
+                                                class="animated smile shmm"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":jdun:"
+                                                class="animated smile jdun"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":pikahuh:"
+                                                class="animated smile pikahuh"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":bnews:"
+                                                class="animated smile bnews"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":slow:"
+                                                class="animated smile slow"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":psyduck:"
+                                                class="animated smile psyduck"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":verybad:"
+                                                class="animated smile verybad"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":eer0:"
+                                                class="animated smile eer0"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":dabgoose:"
+                                                class="animated smile dabgoose"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":worker:"
+                                                class="animated smile worker"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":muton:"
+                                                class="animated smile muton"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":rat:" class="animated smile rat">
+                                            </div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":crab:"
+                                                class="animated smile crab"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":dno:" class="animated smile dno">
+                                            </div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":kran:"
+                                                class="animated smile kran"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":bdance:"
+                                                class="animated smile bdance"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":onelove:"
+                                                class="animated smile onelove"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":bshy:"
+                                                class="animated smile bshy"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":taunt:"
+                                                class="animated smile taunt"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":buff:"
+                                                class="animated smile buff"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":charge:"
+                                                class="animated smile charge"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":wow:" class="animated smile wow">
+                                            </div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":sheep:"
+                                                class="animated smile sheep"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":bearbush:"
+                                                class="animated smile bearbush"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":gottafast:"
+                                                class="animated smile gottafast"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":dendi:"
+                                                class="animated smile dendi"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":love:"
+                                                class="animated smile love"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":ten:" class="animated smile ten">
+                                            </div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":emerald:"
+                                                class="animated smile emerald"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":chest:"
+                                                class="animated smile chest"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":spark:"
+                                                class="animated smile spark"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":pop:" class="animated smile pop">
+                                            </div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":expertm:"
+                                                class="animated smile expertm"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":flame:"
+                                                class="animated smile flame"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":fireext:"
+                                                class="animated smile fireext"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":axe:" class="animated smile axe">
+                                            </div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":kabluk:"
+                                                class="animated smile kabluk"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":divan:"
+                                                class="animated smile divan"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":acordion:"
+                                                class="animated smile acordion"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":bomb:"
+                                                class="animated smile bomb"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":canon:"
+                                                class="animated smile canon"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":calc:"
+                                                class="animated smile calc"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":salt:"
+                                                class="animated smile salt"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":hlebushek:"
+                                                class="animated smile hlebushek"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":burger:"
+                                                class="animated smile burger"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":bdcake:"
+                                                class="animated smile bdcake"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":orange:"
+                                                class="animated smile orange"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":lk:" class="animated smile lk">
+                                            </div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":ledokol:"
+                                                class="animated smile ledokol"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":plane:"
+                                                class="animated smile plane"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":police:"
+                                                class="animated smile police"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":dejavu:"
+                                                class="animated smile dejavu"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":racer:"
+                                                class="animated smile racer"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":delorian:"
+                                                class="animated smile delorian"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":valla:"
+                                                class="animated smile valla"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":tire:"
+                                                class="animated smile tire"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":pilon:"
+                                                class="animated smile pilon"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":fotonka:"
+                                                class="animated smile fotonka"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":toss:"
+                                                class="animated smile toss"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":archon:"
+                                                class="animated smile archon"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":dance:"
+                                                class="animated smile dance"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":zerg:"
+                                                class="animated smile zerg"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":roach:"
+                                                class="animated smile roach"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":overfan:"
+                                                class="animated smile overfan"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":kerrievil:"
+                                                class="animated smile kerrievil"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":muta:"
+                                                class="animated smile muta"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":bane:"
+                                                class="animated smile bane"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":kerrisad:"
+                                                class="animated smile kerrisad"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":goliath:"
+                                                class="animated smile goliath"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":marikbw:"
+                                                class="animated smile marikbw"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":reynor:"
+                                                class="animated smile reynor"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":marik:"
+                                                class="animated smile marik"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":rocket:"
+                                                class="animated smile rocket"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":rail:"
+                                                class="animated smile rail"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":shaft:"
+                                                class="animated smile shaft"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":poo:" class="animated smile poo">
+                                            </div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":ghost:"
+                                                class="animated smile ghost"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":pumpkin:"
+                                                class="animated smile pumpkin"></div>
+                                            <div _ngcontent-lqu-c0="" class="smile-block"><img
+                                                src="./187145_files/blank.gif" title=":moscow:"
+                                                class="animated smile moscow"></div>
+                                        </div>
+                                    </div>
+                                </gg-smiles2>
+                            </ng-transclude>
+                        </div>
+                    </div>
+                </div>
+            </gg-popup><!-- end ngIf: vm.room -->
+
+            <!-- ngIf: vm.view.pollWindow -->
+
+            <!-- ngIf: vm.view.usersList -->
+
+            <!-- ngIf: vm.view.banUser && vm.room.user.rights -->
+
+            <!-- ngIf: vm.view.igroneList -->
+
+            <!-- ngIf: vm.view.bannedList -->
+
+            <!-- ngIf: vm.view.helpersList -->
+
+            <!-- ngIf: vm.view.randomizer -->
+
+            <!-- ngIf: vm.room.user -->
+
+            <!-- ngIf: vm.view.taskList -->
+
+            <!-- ngIf: vm.room.freeprem -->
+
+            <!-- ngIf: vm.view.donat -->
+
+            <!-- ngIf: vm.showCustomDonate -->
+        </div><!-- end ngIf: vm.room -->
+
+        <!-- ngIf: vm.newUserPopup === 1 -->
+
+    </div>
+
+
+</ng-include>
+
+<style>
+    @media (min-width: 600px) {
+        .chat-container .message-block,
+        .chat-container .chat-control-block .text-block .textarea,
+        .popup-block.day-message {
+            font-size: 16px;
+            line-height: 28px;
+        }
+    }
+</style>
+<script type="text/ng-template" id="user.html">
+    <a href="" ng-click="vm.view.pasteNick(userObj.nickname, userObj.private)" class="nick {{::userObj.color}}">
+        <span class="icon icon-{{::userObj.icon}}" tooltip="@{{::userObj.iconTooltip}}"></span>{{ ::userObj.nickname }}</a>
+</script>
+
+<script type="text/ng-template" id="smile.html">
+    <img src="/images/chat/blank.gif" class="smile {{::name}}" tooltip=":{{::name}}:"
+         ng-class="::{'animated':animated=='true'}">
+</script>
+
+<script type="text/ng-template" id="slider.html">
+    <div class="slider-range ui-slider">
+        <div class="slider-range-value"></div>
+        <div class="slider-value ui-slider-handle"></div>
+    </div>
+</script>
+
+<!--    <script src="./187145_files/global.js.Без названия"></script>-->
+
+
+<!--
+<script type="text/javascript" src="./187145_files/main.06c12b2c52bf60940427.js.Без названия"></script>
+<script type="text/javascript" src="./187145_files/polyfills.84345344784893dcce99.js.Без названия"></script>
+<script type="text/javascript" src="./187145_files/runtime.803ee78af7dba6d89ce9.js.Без названия"></script>
+<script type="text/javascript" src="./187145_files/vendor.3fa8e85074a3b5338bb5.js.Без названия"></script>
+<script src="./187145_files/libraries.js.Без названия" type="text/javascript"></script>
+<script src="./187145_files/ckeditor.js.Без названия" type="text/javascript"></script>
+<script src="./187145_files/all.js.Без названия" type="text/javascript"></script>
+-->
+<!--
+
+<script>
+    var Chat = new Chat3({debug: 0});
+    Utils.ecid();
+
+    setTimeout(function () {
+        loadCSS("https://static.goodgame.ru/css/compiled/channels_icons.css?vhphd2");
+        loadCSS("https://static.goodgame.ru/css/compiled/channels_smiles.css?vhr9ff");
+        loadCSS("https://static.goodgame.ru/css/compiled/common_smiles.css?vhr9ch");
+    }, 2000);
+</script>
+-->
+
+<!--<script async="" src="./187145_files/addhtml.js.Без названия"></script>-->
+
+
+<iframe id="frameLoader" src="./187145_files/saved_resource.html"></iframe>
+<link rel="stylesheet" href="./187145_files/channels_icons.css" media="all">
+<link rel="stylesheet" href="./187145_files/channels_smiles.css" media="all">
+<link rel="stylesheet" href="./187145_files/common_smiles.css" media="all">
+</body>
+</html>

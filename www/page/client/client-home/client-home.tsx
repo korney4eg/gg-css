@@ -3,7 +3,7 @@
 
 import {SyntheticEvent, useState} from 'react';
 
-import rawHtml from '../../../material/187145.txt';
+import rawHtml from '../../../material/187145.html';
 
 // import foreign styles
 import style1 from '../../../material/187145_files/style-new.css';
@@ -20,8 +20,6 @@ console.log(style1);
 console.log(style2);
 
 console.log(rawHtml);
-
-import {classNames} from '../../../util/css';
 
 import styleClientHome from './client-home.scss';
 
@@ -129,6 +127,8 @@ export function ClientHome(): JSX.Element {
 /* Цвет фона окна чата. Для настройки прозрачности из единого места. */
 :root {
   --new-bg-color: ${backgroundColor}${Number.parseInt(backgroundColorAlpha, 10).toString(16).padStart(2, '0')};
+  --nick-color: #4e822b;
+  --message-color: #7ff32f;
 }
 
 /* Эта секция для того, чтобы настроить прозрачный фон чатика. */
@@ -150,6 +150,10 @@ div.popup-wrap { display: none; }
 div.chat-control-block {
     display: ${isShowSendButton ? 'block' : 'none'};
     position: static;
+    box-sizing: border-box;
+    max-width: calc(100% - 18px);
+    margin: 0;
+    padding-bottom: 8px;
 }
 
 /* Маленький незаметный блок с красивым градиентом позади чата, он не нужен */
@@ -157,8 +161,8 @@ div.chat-control-block {
 .bg-block { display: none !important; }
 
 /* После того, как спрятали полоску для ввода текста, растягиваем чатик вниз */
-.content-window {
-    height: 100% !important;
+div.chat-container div.content-window {
+    height: auto !important;
     border-left: 0;
 }
 .chat-container_new-guy .content-window { height: 100% !important; }
@@ -181,101 +185,128 @@ div.chat-control-block {
     font-family: ${fontFamilyMap[fontFamilyIndex].name}, ${fontFamilyMap[fontFamilyIndex].letterForm};
     font-size: ${fontSize}px;
 }
+
+/* Настройка цвета текста в чате */
+/*
+.chat-container .message-block .message,
+.chat-container .message-block.king .message,
+p[_ngcontent-sud-c7] {
+    color: var(--message-color);
+}
+*/
+
+/* Настройка цвета ников в чате */
+/*
+.chat-container .nick.simple,
+.chat-container .nick.bronze,
+.chat-container .nick.silver,
+.chat-container .nick.gold,
+.chat-container .nick.diamond,
+.chat-container .nick.king,
+.chat-container .nick.top-one,
+.chat-container .nick.undead,
+.chat-container .nick.premium,
+.chat-container .nick.premium-personal,
+.chat-container .nick.moderator,
+.chat-container .nick.newguy,
+.chat-container .nick.streamer,
+.chat-container .nick.streamer-helper,
+donor,
+your-nick {
+    color: var(--nick-color);
+}
+*/
 `;
 
     return (
-        <div>
-            <div className={styleClientHome.home}>
-                <div className={styleClientHome.home_container}>
-                    <div className={styleClientHome.home_input_container}>
-                        <label>
-                            <span>Background color:</span>
-                            <input
-                                defaultValue={backgroundColor}
-                                onChange={(evt: SyntheticEvent<HTMLInputElement>) => {
-                                    setBackgroundColor(evt.currentTarget.value);
-                                }}
-                                type="color"
-                            />
-                        </label>
-                        <label>
-                            <p>
-                                <span>Background transparent:</span>
-                                <input
-                                    defaultValue={backgroundColorAlpha}
-                                    max="255"
-                                    min="0"
-                                    onChange={(evt: SyntheticEvent<HTMLInputElement>) => {
-                                        setBackgroundColorAlpha(evt.currentTarget.value);
-                                    }}
-                                    step="1"
-                                    type="range"
-                                />
-                            </p>
-                        </label>
-                        <label>
-                            <p>
-                                <span>Show send button:</span>
-                                <input
-                                    defaultChecked={isShowSendButton}
-                                    onChange={(evt: SyntheticEvent<HTMLInputElement>) => {
-                                        setIsShowSendButton(evt.currentTarget.checked);
-                                    }}
-                                    style={{display: 'inline-block'}}
-                                    type="checkbox"
-                                />
-                            </p>
-                        </label>
-                        <label>
-                            <p>font size: {fontSize}</p>
+        <div className={styleClientHome.home}>
+            <div className={styleClientHome.home_container__left}>
+                {/* <div className={styleClientHome.home_input_container}>*/}
+                <form className={styleClientHome.home_form}>
+                    <label>
+                        <span>Background color:</span>
+                        <input
+                            defaultValue={backgroundColor}
+                            onChange={(evt: SyntheticEvent<HTMLInputElement>) => {
+                                setBackgroundColor(evt.currentTarget.value);
+                            }}
+                            type="color"
+                        />
+                    </label>
+                    <label>
+                        <span>Background transparent:</span>
+                        <input
+                            defaultValue={backgroundColorAlpha}
+                            max="255"
+                            min="0"
+                            onChange={(evt: SyntheticEvent<HTMLInputElement>) => {
+                                setBackgroundColorAlpha(evt.currentTarget.value);
+                            }}
+                            step="1"
+                            type="range"
+                        />
+                    </label>
+                    <label>
+                        <span>Show send button:</span>
+                        <input
+                            defaultChecked={isShowSendButton}
+                            onChange={(evt: SyntheticEvent<HTMLInputElement>) => {
+                                setIsShowSendButton(evt.currentTarget.checked);
+                            }}
+                            style={{display: 'inline-block'}}
+                            type="checkbox"
+                        />
+                    </label>
+                    <label>
+                        <span>font size: {fontSize}</span>
 
-                            <input
-                                defaultValue={defaultFontSize}
-                                max={maxFontSize}
-                                min={minFontSize}
-                                onChange={(evt: SyntheticEvent<HTMLInputElement>) => {
-                                    setFontSize(Number.parseInt(evt.currentTarget.value, 10) || defaultFontSize);
-                                }}
-                                step="1"
-                                type="range"
-                            />
-                        </label>
+                        <input
+                            defaultValue={defaultFontSize}
+                            max={maxFontSize}
+                            min={minFontSize}
+                            onChange={(evt: SyntheticEvent<HTMLInputElement>) => {
+                                setFontSize(Number.parseInt(evt.currentTarget.value, 10) || defaultFontSize);
+                            }}
+                            step="1"
+                            type="range"
+                        />
+                    </label>
+                    <label>
+                        <span>font family:</span>
 
-                        <label>
-                            <p>font family:</p>
+                        <select
+                            defaultValue={fontFamilyIndex}
+                            onChange={(evt: SyntheticEvent<HTMLSelectElement>) => {
+                                setFontFamilyIndex(Number.parseInt(evt.currentTarget.value, 10) || 0);
+                            }}
+                        >
+                            {fontFamilyMap.map((fontFamilyItem: FontFamilyType, index: number): JSX.Element => {
+                                return (
+                                    <option key={fontFamilyItem.name} value={index}>
+                                        {fontFamilyItem.name}, ({fontFamilyItem.letterForm})
+                                    </option>
+                                );
+                            })}
+                        </select>
+                    </label>
+                </form>
 
-                            <select
-                                defaultValue={fontFamilyIndex}
-                                onChange={(evt: SyntheticEvent<HTMLSelectElement>) => {
-                                    setFontFamilyIndex(Number.parseInt(evt.currentTarget.value, 10) || 0);
-                                }}
-                            >
-                                {fontFamilyMap.map((fontFamilyItem: FontFamilyType, index: number): JSX.Element => {
-                                    return (
-                                        <option key={fontFamilyItem.name} value={index}>
-                                            {fontFamilyItem.name}, ({fontFamilyItem.letterForm})
-                                        </option>
-                                    );
-                                })}
-                            </select>
-                        </label>
+                <pre className={styleClientHome.home_result} key={css}>
+                    <div>{css}</div>
+                </pre>
+                {/* </div>*/}
+            </div>
 
-                        <textarea key={css} rows={10}>
-                            {css}
-                        </textarea>
-                    </div>
-                </div>
-
-                <div className={classNames(styleClientHome.home_container, 'result-wrapper')}>
-                    <style
-                        // eslint-disable-next-line react/no-danger
-                        dangerouslySetInnerHTML={{__html: css}}
-                    />
-                    <div
-                        // eslint-disable-next-line react/no-danger
-                        dangerouslySetInnerHTML={{__html: rawHtml}}
-                    />
-                </div>
+            <div className={styleClientHome.home_container__right}>
+                <style
+                    // eslint-disable-next-line react/no-danger
+                    dangerouslySetInnerHTML={{__html: css}}
+                />
+                <div
+                    className="premium-icon-5"
+                    // eslint-disable-next-line react/no-danger
+                    dangerouslySetInnerHTML={{__html: rawHtml}}
+                />
             </div>
         </div>
     );
