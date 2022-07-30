@@ -31,6 +31,10 @@ type FontFamilyType = {
 const fontFamilyMap: Array<FontFamilyType> = [
     {
         letterForm: 'sans-serif',
+        name: 'Open Sans',
+    },
+    {
+        letterForm: 'sans-serif',
         name: 'Hack Regular Nerd Font Complete',
     },
     {
@@ -224,7 +228,7 @@ your-nick {
                 {/* <div className={styleClientHome.home_input_container}>*/}
                 <form className={styleClientHome.home_form}>
                     <label>
-                        <span>Background color:</span>
+                        <span>Цвет фона:</span>
                         <input
                             defaultValue={backgroundColor}
                             onChange={(evt: SyntheticEvent<HTMLInputElement>) => {
@@ -234,7 +238,7 @@ your-nick {
                         />
                     </label>
                     <label>
-                        <span>Background transparent:</span>
+                        <span>Процент прозрачности фона:</span>
                         <input
                             defaultValue={backgroundColorAlpha}
                             max="255"
@@ -247,7 +251,7 @@ your-nick {
                         />
                     </label>
                     <label>
-                        <span>Show send button:</span>
+                        <span>Показывать управляющие кнопки:</span>
                         <input
                             defaultChecked={isShowSendButton}
                             onChange={(evt: SyntheticEvent<HTMLInputElement>) => {
@@ -258,7 +262,7 @@ your-nick {
                         />
                     </label>
                     <label>
-                        <span>font size: {fontSize}</span>
+                        <span>Размер шрифта: {fontSize}</span>
 
                         <input
                             defaultValue={defaultFontSize}
@@ -272,7 +276,7 @@ your-nick {
                         />
                     </label>
                     <label>
-                        <span>font family:</span>
+                        <span>Шрифт:</span>
 
                         <select
                             defaultValue={fontFamilyIndex}
