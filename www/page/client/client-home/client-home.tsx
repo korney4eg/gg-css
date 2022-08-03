@@ -72,6 +72,8 @@ export function ClientHome(): JSX.Element {
     const [isShowSendButton, setIsShowSendButton] = useState<boolean>(true);
     const [fontSize, setFontSize] = useState<number>(defaultFontSize);
     const [fontFamilyIndex, setFontFamilyIndex] = useState<number>(0);
+    const [chatHeight, setChatHeight] = useState<number>(800);
+    const [chatWidth, setChatWidth] = useState<number>(600);
 
     const css = `
 /* Цвет фона окна чата. Для настройки прозрачности из единого места. */
@@ -116,7 +118,7 @@ div.chat-container div.content-window {
     border-left: 0;
 }
 .chat-container_new-guy .content-window { height: 100% !important; }
-.chat-container .content-window { height: 100% !important}
+.chat-container .content-window { height: ${chatHeight}px !important; width: ${chatWidth} !important}
 
 /* Скачиваем нужный шрифт */
 @font-face {
@@ -172,6 +174,27 @@ your-nick {
         <div className={styleClientHome.home}>
             <div className={styleClientHome.home_container__left}>
                 <form className={styleClientHome.home_form}>
+                    <label>
+                        <span>Размер чата:</span>
+                        <input
+                            defaultValue={chatWidth}
+                            max="1500"
+                            min="600"
+                            onChange={(evt: SyntheticEvent<HTMLInputElement>) => {
+                                setChatWidth(Number.parseInt(evt.currentTarget.value, 10) || 600);
+                            }}
+                            type="number"
+                        />
+                        <input
+                            defaultValue={chatHeight}
+                            max="1500"
+                            min="600"
+                            onChange={(evt: SyntheticEvent<HTMLInputElement>) => {
+                                setChatHeight(Number.parseInt(evt.currentTarget.value, 10) || 800);
+                            }}
+                            type="number"
+                        />
+                    </label>
                     <label>
                         <span>Цвет фона:</span>
                         <input
