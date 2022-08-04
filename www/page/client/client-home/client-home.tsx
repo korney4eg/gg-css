@@ -67,18 +67,25 @@ export function ClientHome(): JSX.Element {
     const defaultFontSize = 14;
     const minFontSize = 12;
     const maxFontSize = 36;
+    const defaultChatWidth = 500;
+    const minChatWidth = 400;
+    const maxChatWidth = 800;
+    const defaultChatHeight = 700;
+    const minChatHeight = 500;
+    const maxChatHeight = 1000;
+    const defaultBackgroundColorAlpha = 255;
     const [backgroundColor, setBackgroundColor] = useState<string>('#0a0d11');
-    const [backgroundColorAlpha, setBackgroundColorAlpha] = useState<string>('255');
+    const [backgroundColorAlpha, setBackgroundColorAlpha] = useState<number>(defaultBackgroundColorAlpha);
     const [isShowSendButton, setIsShowSendButton] = useState<boolean>(true);
     const [fontSize, setFontSize] = useState<number>(defaultFontSize);
     const [fontFamilyIndex, setFontFamilyIndex] = useState<number>(0);
-    const [chatHeight, setChatHeight] = useState<number>(800);
-    const [chatWidth, setChatWidth] = useState<number>(600);
+    const [chatWidth, setChatWidth] = useState<number>(defaultChatWidth);
+    const [chatHeight, setChatHeight] = useState<number>(defaultChatHeight);
 
     const css = `
 /* Цвет фона окна чата. Для настройки прозрачности из единого места. */
 :root {
-  --new-bg-color: ${backgroundColor}${Number.parseInt(backgroundColorAlpha, 10).toString(16).padStart(2, '0')};
+  --new-bg-color: ${backgroundColor}${backgroundColorAlpha.toString(16).padStart(2, '0')};
   --nick-color: #4e822b;
   --message-color: #7ff32f;
 }
@@ -117,8 +124,21 @@ div.chat-container div.content-window {
     height: auto !important;
     border-left: 0;
 }
+
 .chat-container_new-guy .content-window { height: 100% !important; }
-.chat-container .content-window { height: ${chatHeight}px !important; width: ${chatWidth} !important}
+
+/*
+.chat-container .content-window {
+    height: ${chatHeight}px !important;
+    width: ${chatWidth}px !important;
+}
+*/
+
+.chat-container {
+    height: ${chatHeight}px !important;
+    width: ${chatWidth}px !important;
+    overflow-y: auto;
+}
 
 /* Скачиваем нужный шрифт */
 @font-face {
@@ -176,22 +196,25 @@ your-nick {
                 <form className={styleClientHome.home_form}>
                     <label>
                         <span>Размер чата:</span>
+
                         <input
                             defaultValue={chatWidth}
-                            max="1500"
-                            min="600"
+                            max={maxChatWidth}
+                            min={minChatWidth}
                             onChange={(evt: SyntheticEvent<HTMLInputElement>) => {
-                                setChatWidth(Number.parseInt(evt.currentTarget.value, 10) || 600);
+                                setChatWidth(Number.parseInt(evt.currentTarget.value, 10) || defaultChatWidth);
                             }}
+                            title="Ширина"
                             type="number"
                         />
                         <input
                             defaultValue={chatHeight}
-                            max="1500"
-                            min="600"
+                            max={maxChatHeight}
+                            min={minChatHeight}
                             onChange={(evt: SyntheticEvent<HTMLInputElement>) => {
-                                setChatHeight(Number.parseInt(evt.currentTarget.value, 10) || 800);
+                                setChatHeight(Number.parseInt(evt.currentTarget.value, 10) || defaultChatHeight);
                             }}
+                            title="Высота"
                             type="number"
                         />
                     </label>
@@ -209,10 +232,12 @@ your-nick {
                         <span>Процент прозрачности фона:</span>
                         <input
                             defaultValue={backgroundColorAlpha}
-                            max="255"
+                            max={defaultBackgroundColorAlpha}
                             min="0"
                             onChange={(evt: SyntheticEvent<HTMLInputElement>) => {
-                                setBackgroundColorAlpha(evt.currentTarget.value);
+                                setBackgroundColorAlpha(
+                                    Number.parseInt(evt.currentTarget.value, 10) ?? defaultBackgroundColorAlpha
+                                );
                             }}
                             step="1"
                             type="range"
