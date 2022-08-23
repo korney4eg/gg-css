@@ -67,20 +67,12 @@ export function ClientHome(): JSX.Element {
     const defaultFontSize = 14;
     const minFontSize = 12;
     const maxFontSize = 36;
-    const defaultChatWidth = 500;
-    const minChatWidth = 400;
-    const maxChatWidth = 800;
-    const defaultChatHeight = 700;
-    const minChatHeight = 500;
-    const maxChatHeight = 1000;
     const defaultBackgroundColorAlpha = 255;
     const [backgroundColor, setBackgroundColor] = useState<string>('#0a0d11');
     const [backgroundColorAlpha, setBackgroundColorAlpha] = useState<number>(defaultBackgroundColorAlpha);
     const [isShowSendButton, setIsShowSendButton] = useState<boolean>(true);
     const [fontSize, setFontSize] = useState<number>(defaultFontSize);
     const [fontFamilyIndex, setFontFamilyIndex] = useState<number>(0);
-    const [chatWidth, setChatWidth] = useState<number>(defaultChatWidth);
-    const [chatHeight, setChatHeight] = useState<number>(defaultChatHeight);
 
     const css = `
 /* Цвет фона окна чата. Для настройки прозрачности из единого места. */
