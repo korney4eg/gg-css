@@ -91,8 +91,9 @@ export function ClientHome(): JSX.Element {
 }
 
 /* Эта секция для того, чтобы настроить прозрачный фон чатика. */
-.chat-container { background-color: var(--new-bg-color); }
-html { background-color: var(--new-bg-color); }
+html { background-color: transparent; }
+body { background-color: var(--new-bg-color); }
+.chat-container { background-color: transparent; }
 
 /* Настройка основных параметров окна чата */
 div.chat-container {
