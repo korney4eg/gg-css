@@ -196,7 +196,6 @@ your-nick {
                 <form className={styleClientHome.home_form}>
                     <label>
                         <span>Размер чата:</span>
-
                         <input
                             defaultValue={chatWidth}
                             max={maxChatWidth}
@@ -207,6 +206,7 @@ your-nick {
                             title="Ширина"
                             type="number"
                         />
+                        <span>X</span>
                         <input
                             defaultValue={chatHeight}
                             max={maxChatHeight}

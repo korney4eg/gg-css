@@ -1,3 +1,5 @@
+/* stylelint-disable selector-no-qualifying-type */
+
 body {
     background-image: url('./image/background.jpg');
     background-position: center center;
@@ -41,6 +43,16 @@ body {
         input {
             display: block;
             line-height: 26px;
+            white-space: nowrap;
+        }
+
+        input[type='number'] {
+            height: 30px;
+            max-width: auto;
+            min-width: auto;
+            padding: 4px 8px;
+            text-align: right;
+            width: auto;
         }
     }
 }
