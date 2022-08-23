@@ -117,29 +117,20 @@ div.chat-control-block {
 }
 
 /* Маленький незаметный блок с красивым градиентом позади чата, он не нужен */
+body .chat-container .content-window {
+    ${isShowSendButton ? '' : 'height: 100%;'}
+}
+
 .chat-container .content-window .bg-block { display: none; }
 .bg-block { display: none !important; }
 
 /* После того, как спрятали полоску для ввода текста, растягиваем чатик вниз */
 div.chat-container div.content-window {
-    height: auto !important;
+    ${isShowSendButton ? 'height: auto !important;' : ''}
     border-left: 0;
 }
 
 .chat-container_new-guy .content-window { height: 100% !important; }
-
-/*
-.chat-container .content-window {
-    height: ${chatHeight}px !important;
-    width: ${chatWidth}px !important;
-}
-*/
-
-.chat-container {
-    height: ${chatHeight}px !important;
-    width: ${chatWidth}px !important;
-    overflow-y: auto;
-}
 
 /* Скачиваем нужный шрифт */
 @font-face {
@@ -195,30 +186,6 @@ your-nick {
         <div className={styleClientHome.home}>
             <div className={styleClientHome.home_container__left}>
                 <form className={styleClientHome.home_form}>
-                    <label>
-                        <span>Размер чата:</span>
-                        <input
-                            defaultValue={chatWidth}
-                            max={maxChatWidth}
-                            min={minChatWidth}
-                            onChange={(evt: SyntheticEvent<HTMLInputElement>) => {
-                                setChatWidth(Number.parseInt(evt.currentTarget.value, 10) || defaultChatWidth);
-                            }}
-                            title="Ширина"
-                            type="number"
-                        />
-                        <span>X</span>
-                        <input
-                            defaultValue={chatHeight}
-                            max={maxChatHeight}
-                            min={minChatHeight}
-                            onChange={(evt: SyntheticEvent<HTMLInputElement>) => {
-                                setChatHeight(Number.parseInt(evt.currentTarget.value, 10) || defaultChatHeight);
-                            }}
-                            title="Высота"
-                            type="number"
-                        />
-                    </label>
                     <label>
                         <span>Цвет фона:</span>
                         <input
